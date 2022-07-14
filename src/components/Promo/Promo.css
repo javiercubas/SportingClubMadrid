@@ -13,7 +13,7 @@ section.promo {
 
 .bg-promo{
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: -1;
 }
 
@@ -27,45 +27,42 @@ section.promo {
     background-image: url(https://cdn-1.motorsport.com/images/amp/0L1ElEJ2/s1000/formula-1-spanish-gp-2022-lanc-2.jpg);
 }
 
-@keyframes slider-animation {
-
-    0% {
-        opacity: 0;
-    }
-
-    6% {
-        opacity: 1;
-    }
-
-    24% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.button-promo {
+    background-color: #a39a01;
+    color: white;
+    padding: 6px 25px;
+    border: 0;
+    font-family: 'Teko';
+    font-weight: 700;
+    font-size: 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
 .contenido-promo {
-    width: 100%;
+    width: 68%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 h2.titulo-promo {
     font-family: Teko;
-    color: #a09600;
+    color: white;
     font-size: 70px;
-    width: 445px;
+    font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
+    display: inline;
 }
 
 h2.titulo2-promo {
-    color: dodgerblue;
+    color:  #a09600;
     margin: 0;
     font-size: 70px;
+    font-weight: 700;
+    display: inline;
 }
 
 .botones {
