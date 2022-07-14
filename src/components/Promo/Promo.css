@@ -11,7 +11,11 @@ section.promo {
 
 
 
-
+.bg-promo{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
 
 #nba {
     animation-delay: 10s;
