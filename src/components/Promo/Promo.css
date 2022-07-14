@@ -1,3 +1,17 @@
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #a39a01;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #a39a01;  /* creates padding around scroll thumb */
+  }
+
 section.promo {
     height: 82vh;
     width: 100%;
@@ -8,23 +22,10 @@ section.promo {
     justify-content: space-around;
 }
 
-
-
-
 .bg-promo{
     width: 100%;
     position: absolute;
     z-index: -1;
-}
-
-#nba {
-    animation-delay: 10s;
-    background-image: url(https://compass-ssl.xbox.com/assets/ec/53/ec536eac-8f45-4a67-93ca-caf2f403d4bc.jpg?n=NBA-2K22_Feature-Full-Width-0_Luka_1248x702.jpg);
-}
-
-#f1 {
-    animation-delay: 20s;
-    background-image: url(https://cdn-1.motorsport.com/images/amp/0L1ElEJ2/s1000/formula-1-spanish-gp-2022-lanc-2.jpg);
 }
 
 .button-promo {

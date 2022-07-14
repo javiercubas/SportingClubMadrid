@@ -96,14 +96,15 @@ const HeaderLogo = () => {
         <div className="menu-header">
           <nav className="main-menu">
             <ul className="content-menu-header">
-              <Link to="/" className="elements-menu-header">Inicio</Link>
-              <Link to="/" className="elements-menu-header">Inicio</Link>
-              <Link to="/" className="elements-menu-header">Inicio</Link>
-              <Link to="/" className="elements-menu-header">Inicio</Link>
-              <Link to="/" className="elements-menu-header">Inicio</Link>
-              <Link to="/" className="elements-menu-header">Inicio</Link>
-              <Link to="/" className="elements-menu-header">Inicio</Link>
-              <Link to="/" className="elements-menu-header">Inicio</Link>
+              <Link to="/" className="elements-menu-header">Home</Link>
+              <Link to="/" className="elements-menu-header">Mission</Link>
+              <Link to="/" className="elements-menu-header">Our Program</Link>
+              <Link to="/" className="elements-menu-header">Club Staff</Link>
+              <Link to="/" className="elements-menu-header">Women</Link>
+              <Link to="/" className="elements-menu-header">Men</Link>
+              <Link to="/" className="elements-menu-header">Universities</Link>
+              <Link to="/" className="elements-menu-header">Contact</Link>
+              <Link to="/" className="elements-menu-header">Blog</Link>
             </ul>
           </nav>
           <i className="fas fa-search"></i>
