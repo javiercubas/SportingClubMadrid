@@ -7,12 +7,12 @@ export default function Promo() {
     return (
         <section className="promo" id="landing">
             <div class="slider-wrap">
-                <div class="single-slide" id="fifa"></div>
-                <div class="single-slide" id="nba"></div>
-                <div class="single-slide" id="f1"></div>
+                <div class="single-slide" id="slider1"></div>
+                <div class="single-slide" id="slider2"></div>
+                <div class="single-slide" id="slider3"></div>
             </div>
             <div className="contenido-promo">
-                <h2 className="titulo-promo">{t("home-promo.title")}
+                <h2 className="titulo-promo">SPORTING CLUB MADRID
                     <h2 className='titulo2-promo'>{t("home-promo.title2")}.</h2>
                 </h2>
                 <div className="botones">

@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: relative;
     z-index: 1000;
 }
 
@@ -54,7 +54,7 @@
 .title-header {
     font-weight: 1000;
     font-size: 60px;
-    font-family: Bebas Neue;
+    font-family: Teko;
     margin: 0;
     color: #a09600;
 }
