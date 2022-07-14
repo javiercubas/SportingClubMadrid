@@ -1,0 +1,28 @@
+.blitz-tournaments{
+    height: 82vh;
+    width: 100%;
+    background-image: url(https://t9h7n3i5.stackpathcdn.com/wp-content/uploads/2021/09/Real-Madrid-FIFA-22.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.content-blitz-tournaments{
+    height: 80%;
+    width: 40%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.title-content-blitz-tournaments{
+    color: white;
+    text-transform: uppercase;
+}

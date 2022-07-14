@@ -1,0 +1,22 @@
+{
+    "top-menu": {
+        "personal-area": "Area personale",
+        "your-teams": "Le tue squadre",
+        "your-matches": "Le tue partite",
+        "your-competitions": "Le tue campionati",
+        "your-stats": "Le tue statistiche",
+        "hi": "Ciao",
+        "register": "Iscriviti / Accedi"
+    },
+
+    "main-menu": {
+        "home": "Pagina iniziale",
+        "teams": "Squadre",
+        "national-teams": "Squadre Nazionali",
+        "leagues": "Campionati",
+        "tournaments": "Tornei",
+        "blitz-tournaments": "Tornei Lampo",
+        "friendly-matches": "Pachangas",
+        "contact": "Contatto"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "top-menu": {
+        "personal-area": "Personal area",
+        "your-teams": "Your teams",
+        "your-matches": "Your matches",
+        "your-competitions": "Your competitions",
+        "your-stats": "Your stats",
+        "hi": "Hi",
+        "register": "Sign Up / Login"
+    },
+
+    "main-menu": {
+        "home": "Home",
+        "teams": "Teams",
+        "national-teams": "National Teams",
+        "leagues": "Leagues",
+        "tournaments": "Tournaments",
+        "blitz-tournaments": "Blitz Tournaments",
+        "friendly-matches": "Friendly Matches",
+        "contact": "Contact"
+    },
+
+    "login": {
+        "email": "E-mail Address",
+        "password": "Password",
+        "login": "Login",
+        "login-google": "Login with Google",
+        "forgot-password": "Forgot Password",
+        "signup": "Don't have an account?",
+        "signup2": "now",
+        "signup-link": "Register"
+    },
+
+    "home-promo": {
+        "title": "Play, Compete and",
+        "title2": "Enjoy"
+    },
+
+    "home-webstats": {
+        "title": "in numbers",
+        "countrys": "countrys",
+        "games": "games",
+        "players": "players",
+        "competitions": "competitions"
+    }
+}

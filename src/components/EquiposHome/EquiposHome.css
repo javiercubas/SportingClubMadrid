@@ -1,0 +1,76 @@
+.teams-home {
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+}
+
+.background-teams-home {
+    background: url(https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/10/13/rewupflqg5iamgghktjr/fifa-21-pro-clubs-imagen);
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5) blur(10px);
+    position: absolute;
+    background-position: bottom;
+    background-size: cover;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.content-teams-home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sides-content-teams-home{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-content-teams-home{
+    height: 80%;
+    width: 70%;
+    background: radial-gradient(circle, rgba(70,130,180,1) 0%, rgba(4,59,105,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.img-side-content-teams-home{
+    object-fit: contain;
+    height: 70%;
+}
+
+.button-side-content-teams-home {
+    min-width: 130px;
+    color: steelblue;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: white;
+  }
+  .button-side-content-teams-home:hover {
+    background: #fff;
+    color: black;
+  }

@@ -1,0 +1,22 @@
+{
+    "top-menu": {
+        "personal-area": "Espace Personnel",
+        "your-teams": "Vos Équipes",
+        "your-matches": "Vos Matchs",
+        "your-competitions": "Vos Compétitions",
+        "your-stats": "Vos Statistiques",
+        "hi": "Salut",
+        "register": "S'inscrire / Se connecter"
+    },
+
+    "main-menu": {
+        "home": "Page d'accueil",
+        "teams": "Équipes",
+        "national-teams": "Équipes Nationales",
+        "leagues": "Ligues",
+        "tournaments": "Tournois",
+        "blitz-tournaments": "Tournois Éclairs",
+        "friendly-matches": "Matchs Amicaux",
+        "contact": "Contactez"
+    }
+}

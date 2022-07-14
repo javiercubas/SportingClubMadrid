@@ -1,0 +1,80 @@
+.field{
+    height: 100%;
+    width: 50%;
+    background-image: url(./assets/campo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-field{
+    height: 92%;
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.lines {
+    height: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.position {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-position {
+    background-image: url(https://assets.laliga.com/squad/2021/t186/p60772/2048x2225/p60772_t186_2021_1_001_000.png);
+    width: 100%;
+    height: 75%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.content-position {
+    color: steelblue;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.number-content-position {
+    width: fit-content;
+    height: 100%;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 8px;
+}
+
+.name-content-position {
+    padding: 0 5px;
+}
+
+.flag-image-position {
+    width: 25px;
+    height: 100%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/800px-Flag_of_Belgium_%28civil%29.svg.png);
+    background-size: contain;
+    background-position: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

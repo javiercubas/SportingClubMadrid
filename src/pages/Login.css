@@ -1,0 +1,42 @@
+.login {
+    height: 82vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://data3.origin.com/asset/content/dam/originx/web/app/games/fifa/fifa-22/screenshots_reveal/CHE_CELE_G4_BOP.jpg/ba930019-5a22-45be-a932-ce3f0021cf76/original.jpg);
+    background-size: cover;
+    background-position: center;
+}
+  
+  .login__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #dcdcdc;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .login__textBox {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .login__btn {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+  }
+  
+  .login__google {
+    background-color: #4285f4;
+  }
+  
+  .login div {
+    margin-top: 7px;
+  }
