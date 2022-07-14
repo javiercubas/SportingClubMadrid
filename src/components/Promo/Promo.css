@@ -8,30 +8,10 @@ section.promo {
     justify-content: space-around;
 }
 
-.slider-wrap {
-    height: 100%;
-    width: 100%;
-    filter: brightness(0.5) blur(10px);
-    position: absolute;
-    z-index: -1;
-}
 
-.single-slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-attachment: fixed;
-    opacity: 0;
-    animation: slider-animation;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    background-size: cover;
-}
 
-#fifa {
-    background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/10/13/rewupflqg5iamgghktjr/fifa-21-pro-clubs-imagen);
-}
+
+
 
 #nba {
     animation-delay: 10s;
@@ -55,10 +35,6 @@ section.promo {
 
     24% {
         opacity: 1;
-    }
-
-    30% {
-        opacity: 0;
     }
 
     100% {

@@ -6,11 +6,7 @@ export default function Promo() {
     const [t] = useTranslation("global");
     return (
         <section className="promo" id="landing">
-            <div class="slider-wrap">
-                <div class="single-slide" id="slider1"></div>
-                <div class="single-slide" id="slider2"></div>
-                <div class="single-slide" id="slider3"></div>
-            </div>
+            <img src="./assets/foto1.jpg" className='bg-promo'/>
             <div className="contenido-promo">
                 <h2 className="titulo-promo">SPORTING CLUB MADRID
                     <h2 className='titulo2-promo'>{t("home-promo.title2")}.</h2>
