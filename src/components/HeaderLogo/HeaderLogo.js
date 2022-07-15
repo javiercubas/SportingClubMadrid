@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "../../Firebase";
-import { query, collection, getDocs, where } from "firebase/firestore";
+import { query, collection, getDocs, where, connectFirestoreEmulator } from "firebase/firestore";
 import Popup from "../Popup/Popup";
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
@@ -31,7 +31,7 @@ const HeaderLogo = () => {
     if (!user) return;
     fetchUserName();
   }, [user, loading]);
-
+  
   const [visibility, setVisibility] = useState(false);
 
   const popupCloseHandler = (e) => {

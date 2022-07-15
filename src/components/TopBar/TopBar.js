@@ -8,6 +8,7 @@ import Sidebar from "./Sidebar";
 import Popup from "../Popup/Popup";
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
+import { elementor } from "fontawesome";
 
 export function Languages(props) {
     const { country, language } = props;
@@ -123,6 +124,18 @@ export default function TopBar() {
 
     }
     const [t] = useTranslation("global");
+
+    function isInViewport(elem) {
+        var distance = elem.getBoundingClientRect();
+        return (
+          distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+        );
+      }
+      var elem = document.getElementsByClassName('header-container')[0];
+      window.addEventListener("scroll", function () {
+        if (isInViewport(elem)) document.getElementsByClassName("top-bar")[0].style.display="none";
+        else document.getElementsByClassName("top-bar")[0].style.display="flex";
+      });
     return (
         <>
             <Popup
@@ -142,7 +155,6 @@ export default function TopBar() {
             <div className="top-bar">
                 <Link to="/" exact className="logo-top-bar">
                     <button className="country-logo-top-bar" style={{ backgroundImage: `url(/assets/${language}.png)` }} onClick={(e) => setVisibility(!visibility)} />
-                    <button className="platform-logo-top-bar" style={{ backgroundImage: "url(/assets/ps_white.png)", backgroundColor: "blue" }} onClick={(e) => setVisibility(!visibility)} />
                 </Link>
                 <div className="menus-top-bar">
                     <div className="account-menu-top-bar">

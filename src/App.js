@@ -14,17 +14,10 @@ import HeaderLogo from './components/HeaderLogo/HeaderLogo';
 
 
 export default function App() {
-  let header;
-  if (window.scrollY<80){
-    header=<HeaderLogo/>
-  }
-  else{
-    header=<TopBar/>
-  }
-
   return (
     <>
-      {header}
+      <HeaderLogo/>
+      <TopBar/>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/login" exact element={<Login />} />

@@ -100,10 +100,11 @@
     width: 100%;
     height: 18vh;
     background-color: white;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
-    position: fixed
+    position: fixed;
+    z-index: 1000;
 }
 
 .logo-top-bar {
@@ -162,7 +163,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    color: white;
+    color: black;
     text-transform: uppercase;
     list-style-type: none;
     justify-content: right;
@@ -172,7 +173,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    color: white;
+    color: black;
     text-transform: uppercase;
     list-style-type: none;
     margin-left: 7%;
@@ -200,11 +201,11 @@
 }
 
 .links-top-menu-top-bar:hover {
-    background-color: steelblue;
+    background-color: white;
 }
 
 .object-main-menu-top-bar {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 700;
     transition: 0.5s;
@@ -269,15 +270,17 @@
         width: 100%;
         height: 18vh;
         background-color: white;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: space-between;
+        z-index: 1000;
+        position: fixed;
     }
 
     .logo-top-bar {
         width: 15%;
-        height: 100%;
-        background-image: url(../../cpa.png);
+        height: 95%;
+        background-image: url(https://static.wixstatic.com/media/d78913_5b532f30dd3f4c8999ea776d97203a61~mv2.png/v1/fill/w_244,h_317,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot__125_-removebg-preview.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -294,18 +297,6 @@
         background-size: cover;
         border-radius: 100%;
         background-position: center;
-    }
-
-    .platform-logo-top-bar {
-        position: absolute;
-        left: 125%;
-        top: 15px;
-        width: 35px;
-        height: 35px;
-        background-size: 75%;
-        border-radius: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
     .menus-top-bar {
@@ -340,7 +331,7 @@
     .main-menu-top-bar {
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: #a39a01;
         clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
         display: flex;
         align-items: center;
@@ -359,7 +350,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        color: white;
+        color: black;
         text-transform: uppercase;
         list-style-type: none;
         justify-content: right;
@@ -369,7 +360,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        color: white;
+        color: black;
         text-transform: uppercase;
         list-style-type: none;
         margin-left: 7%;
@@ -397,7 +388,7 @@
     }
 
     .links-top-menu-top-bar:hover {
-        background-color: steelblue;
+        background-color: white;
     }
 
     .object-main-menu-top-bar {
@@ -409,7 +400,7 @@
     }
 
     .object-main-menu-top-bar:hover {
-        color: steelblue;
+        color: black;
     }
 
     .object-main-menu-top-bar::before {
@@ -418,7 +409,7 @@
         width: 0;
         bottom: 0;
         height: 4px;
-        background-color: steelblue;
+        background-color: black;
         transition: 0.5s;
     }
 
