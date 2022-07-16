@@ -12,7 +12,6 @@ export default function Home() {
     return (
         <>
             <Promo/>
-            <Promo2/>
             <WebStats />
         </>
     )
