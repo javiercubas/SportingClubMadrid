@@ -133,8 +133,14 @@ export default function TopBar() {
       }
       var elem = document.getElementsByClassName('header-container')[0];
       window.addEventListener("scroll", function () {
-        if (isInViewport(elem)) document.getElementsByClassName("top-bar")[0].style.display="none";
-        else document.getElementsByClassName("top-bar")[0].style.display="flex";
+        if (isInViewport(elem)){
+            document.getElementsByClassName("top-bar")[0].style.height=0;
+            document.getElementsByClassName("country-logo-top-bar")[0].style.height='0';
+        } 
+        else {
+            document.getElementsByClassName("top-bar")[0].style.height="18vh";
+            document.getElementsByClassName("country-logo-top-bar")[0].style.height='50px';
+        }
       });
     return (
         <>
