@@ -1,0 +1,116 @@
+body{
+    background-color: white;
+}
+hr{
+    width: 70%;
+    height: 1px;
+    border: 0;
+    background-color: black;
+    margin-bottom: 50px;
+}
+.main{
+    width: 1200px;
+    background-color: rgb(249, 249, 249);
+    box-sizing: border-box;
+    margin: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #0003;
+}
+.main__header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 30px 0;
+}
+.main__header__leftLine{
+    height: 100%;
+    width: 5px;
+    background-color: blue;
+}
+.main__header__text{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.main__header__button{
+    height: 50px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 0;
+    border: 1px solid rgb(152, 152, 152);
+    background-color: white;
+    padding: 0 20px;
+    color: rgb(152, 152, 152);
+}
+.main__header__button:hover{
+    height: 50px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 0;
+    border: 1px solid rgb(60, 60, 60);
+    background-color: white;
+    padding: 0 20px;
+    color: rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+.main__enunciado{
+
+}
+
+.main__enunciado--h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Propiedades de la tabla*/
+.main__header__text{
+    font-size: 25px;
+}
+table{
+    margin: 15px auto 35px auto;
+    border-collapse: collapse;
+}
+.td--equipo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    height: 100%;
+}
+.teamLogo{
+    height: 50px;
+}
+td, th{
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+#th--club{
+    text-align: left;
+}
+th{
+    font-weight: 700;
+    font-size: 20px;
+}
+td{
+    border-bottom: 1px solid black;
+    padding: 10px 30px;
+}
+#main{
+    background-color: rgb(226, 226, 226);
+}
+#main td{
+    font-weight: 700;
+}

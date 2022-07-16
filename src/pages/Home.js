@@ -8,6 +8,7 @@ import WebStats from '../components/WebStats/WebStats';
 import TOTW2 from '../components/TOTW/TOTW2';
 import CardMatch from '../components/Partidos/cardMatch.js';
 import './Home.css';
+import TablaClasificacion from '../components/TablaClasificacion/TablaClasificacion';
 
 export default function Home() {
     return (
@@ -42,7 +43,12 @@ export default function Home() {
                     equipoVisitante = 'Sporting Club Madrid'
                 />
             </div>
-            <WebStats />
+            <div className='matches'>
+            <TablaClasificacion />
+            <TablaClasificacion />
+            <TablaClasificacion />
+            </div>
+            
         </>
     )
 }
