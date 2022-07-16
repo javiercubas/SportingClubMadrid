@@ -6,7 +6,6 @@ import Promo from '../components/Promo/Promo';
 import EquiposHome from '../components/EquiposHome/EquiposHome'
 import WebStats from '../components/WebStats/WebStats';
 import TOTW2 from '../components/TOTW/TOTW2';
-import Promo2 from '../components/Promo2/Promo2';
 import CardMatch from '../components/Partidos/cardMatch.js';
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
         <>
             <Promo/>
             <CardMatch/>
-            <Promo2/>
             <WebStats />
         </>
     )
