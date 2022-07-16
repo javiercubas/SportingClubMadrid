@@ -5,14 +5,13 @@ hr{
     background-color: black;
     margin-bottom: 50px;
 }
-.main{
-    width: 29.5%;
-    margin: 2%;
+.table{
+    width: 100%;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0px 0px 20px 0px #0003;
 }
-.main__header{
+.table__header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,21 +20,21 @@ hr{
     gap: 5%;
     padding: 30px 0;
 }
-.main__header__leftLine{
-    height: 100%;
-    width: 5px;
-    background-color: blue;
-}
-.main__header__text{
+.table__header__text{
     display: inline;
     text-transform: uppercase;
     font-weight: 600;
+    text-align: center; 
+    font-size: 2vw;
+    
 }
-.main__header__button{
+.table__header__button{
     height: 50px;
-    width: auto;
+    width: 80%;
+    max-width: 300px;
+    min-width: 50%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-transform: uppercase;
     font-weight: 800;
     border-radius: 0;
@@ -44,7 +43,7 @@ hr{
     padding: 0 20px;
     color: rgb(152, 152, 152);
 }
-.main__header__button:hover{
+.table__header__button:hover{
     height: 50px;
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -59,18 +58,18 @@ hr{
     cursor: pointer;
 }
 
-.main__enunciado{
+.table__enunciado{
 
 }
 
-.main__enunciado--h1{
+.table__enunciado--h1{
     text-transform: uppercase;
     text-align: center;
 }
 
 /*Propiedades de la tabla*/
-.main__header__text{
-    font-size: 25px;
+.table__tableContainer{
+    width: 100%;
 }
 
 table{
@@ -112,6 +111,6 @@ td{
     padding: 10px 30px;
 }
 
-#main td{
+#table td{
     font-weight: 700;
 }

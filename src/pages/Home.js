@@ -43,10 +43,10 @@ export default function Home() {
                     equipoVisitante = 'Sporting Club Madrid'
                 />
             </div>
-            <div className='matches'>
-            <TablaClasificacion />
-            <TablaClasificacion />
-            <TablaClasificacion />
+            <div className='matches2'>
+            <TablaClasificacion class="aaa"/>
+            <TablaClasificacion class="aaa"/>
+            <TablaClasificacion class="aaa"/>
             </div>
             
         </>

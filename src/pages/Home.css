@@ -1,3 +1,4 @@
+
 .title-matches{
     text-transform: uppercase;
     position: relative;
@@ -19,4 +20,20 @@ background: linear-gradient(90deg, rgba(163,154,1,1) 0%, rgba(163,154,1,0) 100%)
     width: 100%;
     display: flex;
     align-items: center;
+}
+.matches2{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.aaa{
+    width: 100%;
+}
+
+@media(max-width: 1000){
+    
+}
+
+@media(max-width: 500){
+    
 }
