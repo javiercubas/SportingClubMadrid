@@ -1,7 +1,8 @@
 import './cardMatch.css'
 
 export default function CardMatch(props) {
-    const { equipo, fecha, hora, competicion, equipoLocal, equipoVisitante } = props;
+    const { equipo, fecha, hora, competicion, equipoLocal, equipoVisitante} = props;
+
     return (
         <div className="caja">
             <div className='content-caja'>
