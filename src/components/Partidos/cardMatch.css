@@ -39,8 +39,8 @@
 }
 
 .escudo{
-    width: 90%;
-    height: 90%;
+    width: 5.7vw;
+    height: 14.4vh;
     background-image: url(https://static.wixstatic.com/media/d78913_5b532f30dd3f4c8999ea776d97203a61~mv2.png/v1/fill/w_160,h_208,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot__125_-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
 
 .nombreEquipo{
     width: 5vw;
-    height: 5vh;
+    height: 4vh;
     margin-top: 10%;
     display: flex;
     align-items: center;
