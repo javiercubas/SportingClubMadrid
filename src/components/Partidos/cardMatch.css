@@ -1,0 +1,125 @@
+
+.cajaContent{
+    width: 99vw;
+    height: 30vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadce1;
+}
+
+.caja2{
+    width: 33%;
+    height: 90%;
+    background-image:url('../../../public/assets/fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.equipo{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiempo{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escudo{
+    width: 90%;
+    height: 90%;
+    background-image: url(https://static.wixstatic.com/media/d78913_5b532f30dd3f4c8999ea776d97203a61~mv2.png/v1/fill/w_160,h_208,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot__125_-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nombreEquipo{
+    width: 5vw;
+    height: 5vh;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.weekDay{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
+
+.nameTeam{
+    font-size: 16px;
+}
+
+.contador{
+    background-color: orange;
+    width: 100%;
+    height: 50%;
+}
+
+
+.day{
+   height: 33%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.competition{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.week{
+    font-size: 22px;
+    text-align: center;
+}
+
+.competitionName{
+    font-size: 18px;
+    text-align: center;
+}
+
+.teamClub{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category{
+    font-size: 18px;
+    text-align: center;
+}
