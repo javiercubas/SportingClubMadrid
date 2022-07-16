@@ -1,26 +1,26 @@
 import './cardMatch.css'
 
-export default function CardMatch() {
-
-    return(
-        <div className="cajaContent">
-            <div className="caja2">
+export default function CardMatch(props) {
+    const { equipo, fecha, hora, competicion, equipoLocal, equipoVisitante } = props;
+    return (
+        <div className="caja">
+            <div className='content-caja'>
                 <div className='weekDay'>
                     <div className='teamClub'>
-                        <h1 className='category'>MASCULINO</h1>
-                    </div>  
+                        <h2 className='category'>{equipo}</h2>
+                    </div>
                     <div className='day'>
-                        <h1 className='week'>Lunes, 1 ENERO-20:00</h1>
+                        <h3 className='week'>{fecha} - {hora}</h3>
                     </div>
                     <div className='competition'>
-                        <h2 className='competitionName'>PRETEMPORADA</h2>
+                        <h3 className='competitionName'>{competicion}</h3>
                     </div>
                 </div>
                 <div className='match'>
                     <div className='equipo'>
                         <div className='escudo'></div>
                         <div className='nombreEquipo'>
-                            <h1 className='nameTeam'>Sporting</h1>
+                            <h1 className='nameTeam'>{equipoLocal}</h1>
                         </div>
                     </div>
                     <div className='tiempo'>
@@ -29,67 +29,7 @@ export default function CardMatch() {
                     <div className='equipo'>
                         <div className='escudo'></div>
                         <div className='nombreEquipo'>
-                            <h1 className='nameTeam'>Sporting</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="caja2">
-                <div className='weekDay'>
-                    <div className='teamClub'>
-                        <h1 className='category'>FEMENINO</h1>
-                    </div>
-                    <div className='day'>
-                        <h1 className='week'>Lunes, 1 ENERO-20:00</h1>
-                    </div>
-                    <div className='competition'>
-                        <h2 className='competitionName'>PRETEMPORADA</h2>
-                    </div>
-                </div>
-                <div className='match'>
-                    <div className='equipo'>
-                        <div className='escudo'></div>
-                        <div className='nombreEquipo'>
-                            <h1 className='nameTeam'>Sporting</h1>
-                        </div>
-                    </div>
-                    <div className='tiempo'>
-                        <div className='contador'></div>
-                    </div>
-                    <div className='equipo'>
-                        <div className='escudo'></div>
-                        <div className='nombreEquipo'>
-                            <h1 className='nameTeam'>Sporting</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="caja2">
-                <div className='weekDay'>
-                    <div className='teamClub'>
-                        <h1 className='category'>U-19</h1>
-                    </div>
-                    <div className='day'>
-                        <h1 className='week'>Lunes, 1 ENERO-20:00</h1>
-                    </div>
-                    <div className='competition'>
-                        <h2 className='competitionName'>PRETEMPORADA</h2>
-                    </div>
-                </div>
-                <div className='match'>
-                    <div className='equipo'>
-                        <div className='escudo'></div>
-                        <div className='nombreEquipo'>
-                            <h1 className='nameTeam'>Sporting</h1>
-                        </div>
-                    </div>
-                    <div className='tiempo'>
-                        <div className='contador'></div>
-                    </div>
-                    <div className='equipo'>
-                        <div className='escudo'></div>
-                        <div className='nombreEquipo'>
-                            <h1 className='nameTeam'>Sporting</h1>
+                            <h1 className='nameTeam'>{equipoVisitante}</h1>
                         </div>
                     </div>
                 </div>
