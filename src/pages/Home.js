@@ -7,6 +7,7 @@ import EquiposHome from '../components/EquiposHome/EquiposHome'
 import WebStats from '../components/WebStats/WebStats';
 import TOTW2 from '../components/TOTW/TOTW2';
 import CardMatch from '../components/Partidos/cardMatch.js';
+import TablaClasificacion from '../components/TablaClasificacion/TablaClasificacion';
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Promo/>
             <CardMatch/>
             <WebStats />
+            <TablaClasificacion />
         </>
     )
 }
