@@ -22,11 +22,11 @@
 }
 
 .equipo{
-    width: 40%;
-    height: 90%;
+    width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -39,16 +39,15 @@
 }
 
 .escudo{
-    width: 5.7vw;
-    height: 14.4vh;
+    width: 65%;
+    height: 65%;
     background-image: url(https://static.wixstatic.com/media/d78913_5b532f30dd3f4c8999ea776d97203a61~mv2.png/v1/fill/w_160,h_208,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot__125_-removebg-preview.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .nombreEquipo{
-    height: 4vh;
-    margin-top: 10%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,12 +75,6 @@
 .nameTeam{
     font-size: 18px;
     text-transform: uppercase;
-}
-
-.contador{
-    background-color: orange;
-    width: 100%;
-    height: 50%;
 }
 
 
@@ -122,4 +115,19 @@
 .category{
     font-size: 22px;
     text-align: center;
+}
+
+@media only screen and (orientation: portrait) {
+    .caja{
+        width: 90%;
+    }
+
+    .equipo {
+        height: 100%;
+        justify-content: space-between;
+    }
+    
+    .nombreEquipo {
+        height: 30%;
+    }
 }

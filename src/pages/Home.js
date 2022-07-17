@@ -9,12 +9,13 @@ import TOTW2 from '../components/TOTW/TOTW2';
 import CardMatch from '../components/Partidos/cardMatch.js';
 import './Home.css';
 import TablaClasificacion from '../components/TablaClasificacion/TablaClasificacion';
+import { countDown } from '../components/Partidos/Timer/countDown';
 
 export default function Home() {
     return (
         <>
             <Promo />
-            <div style={{ height: "100%", width: "95%" }}>
+            <div style={{ height: "100%", width: "95%", display:"flex", justifyContent: "center" }}>
                 <h2 className='title-matches'>Próximos Partidos</h2>
             </div>
             <div className='matches'>

@@ -34,7 +34,9 @@ export default function CardMatch(props) {
                             <h1 className='nameTeam'>{equipoLocal}</h1>
                         </div>
                     </div>
-                        <CountDown/>
+                        <CountDown
+                            fecha={{fecha}+" "+{hora}+":00"}
+                        />
                     <div className='equipo'>
                         <div className='escudo'></div>
                         <div className='nombreEquipo'>

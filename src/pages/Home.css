@@ -1,4 +1,5 @@
 .title-matches{
+    width: 100%;
     text-transform: uppercase;
     position: relative;
     color: #a39a01;
@@ -18,5 +19,13 @@ background: linear-gradient(90deg, rgba(163,154,1,1) 0%, rgba(163,154,1,0) 100%)
 .matches{
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
+}
+
+@media only screen and (orientation: portrait) {
+    .matches{
+        flex-direction: column;
+        width: 95%;
+    }   
 }
