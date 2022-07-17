@@ -1,10 +1,19 @@
 import './cardMatch.css'
 
 export default function CardMatch(props) {
-    const { equipo, fecha, hora, competicion, equipoLocal, equipoVisitante} = props;
-
+    const { equipo, fecha, hora, competicion, equipoLocal, equipoVisitante } = props;
+    let fondo;
+    let posicion;
+    if (equipoLocal == "Sporting Club Madrid") {
+        fondo = "/assets/fondo1.jpg";
+        posicion = "left";
+    }
+    else {
+        fondo = "/assets/fondo2.jpg";
+        posicion = "right";
+    }
     return (
-        <div className="caja">
+        <div className="caja" style={{ backgroundImage: "url(" + fondo + ")", backgroundPosition: posicion }}>
             <div className='content-caja'>
                 <div className='weekDay'>
                     <div className='teamClub'>
