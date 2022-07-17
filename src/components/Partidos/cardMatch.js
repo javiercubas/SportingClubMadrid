@@ -1,4 +1,5 @@
 import './cardMatch.css'
+import CountDown from './Timer/countDown.js';
 
 export default function CardMatch(props) {
     const { equipo, fecha, hora, competicion, equipoLocal, equipoVisitante } = props;
@@ -33,9 +34,7 @@ export default function CardMatch(props) {
                             <h1 className='nameTeam'>{equipoLocal}</h1>
                         </div>
                     </div>
-                    <div className='tiempo'>
-                        <div className='contador'></div>
-                    </div>
+                        <CountDown/>
                     <div className='equipo'>
                         <div className='escudo'></div>
                         <div className='nombreEquipo'>
