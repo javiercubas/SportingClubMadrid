@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { TopMenu } from "./TopBar";
 import { useTranslation } from "react-i18next";
 
 
@@ -25,7 +24,6 @@ export default function Sidebar(props) {
                 </div>
                 <div className="sd-body">
                     <ul>
-                        <TopMenu option="2" name={name} user={user} />
                         <li><Link to='/' exact>{t("main-menu.home")}</Link></li>
                         <li><Link to='/teams' exact>{t("main-menu.teams")}</Link></li>
                         <li><Link to='/national-teams' exact>{t("main-menu.national-teams")}</Link></li>

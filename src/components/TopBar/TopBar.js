@@ -8,7 +8,6 @@ import Sidebar from "./Sidebar";
 import Popup from "../Popup/Popup";
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
-import { elementor } from "fontawesome";
 
 export function Languages(props) {
     const { country, language } = props;
@@ -16,63 +15,12 @@ export function Languages(props) {
         <button className="country-grid-flags" onClick={() => {
             const function1 = i18next.changeLanguage(country)
             const function2 = document.getElementsByClassName('overlay')[0].style.visibility = "hidden"
-            const function3 =  document.getElementsByClassName('overlay')[0].style.opacity = "0"
+            const function3 = document.getElementsByClassName('overlay')[0].style.opacity = "0"
         }}>
             <img className="img-country-grid-flags" src={`/assets/${language}.png`} />
             <p className="name-country-grid-flags">{language}</p>
         </button>
     )
-}
-export function TopMenu(props) {
-    const { option, name, user } = props;
-    let TopMenu;
-    const [t] = useTranslation("global");
-    if (option == 1) {
-        if (!user) {
-            TopMenu = <Link to="/login/" className="login-account-menu-top-bar">{t("top-menu.register")}</Link>;
-        }
-        else {
-            TopMenu = <nav className="top-menu-top-bar">
-                <ul className="list-top-menu-top-bar">
-                    <li className="links-top-menu-top-bar">
-                        <Link to="/dashboard/" className="logged-account-menu-top-bar">{t("top-menu.personal-area")}</Link>
-                    </li>
-                    <li className="links-top-menu-top-bar">
-                        <Link to="/dashboard/" className="logged-account-menu-top-bar">{t("top-menu.your-teams")}</Link>
-                    </li>
-                    <li className="links-top-menu-top-bar">
-                        <Link to="/dashboard/" className="logged-account-menu-top-bar">{t("top-menu.your-matches")}</Link>
-                    </li>
-                    <li className="links-top-menu-top-bar">
-                        <Link to="/dashboard/" className="logged-account-menu-top-bar">{t("top-menu.your-competitions")}</Link>
-                    </li>
-                    <li className="links-top-menu-top-bar">
-                        <Link to="/stats/" className="logged-account-menu-top-bar">{t("top-menu.your-stats")}</Link>
-                    </li>
-                    <li className="links-top-menu-top-bar">
-                        <Link to="/profile/" className="logged-account-menu-top-bar">{t("top-menu.hi")}, {name}<img src={user.photoURL} className="image-account-menu-top-bar" /></Link>
-                    </li>
-                </ul>
-            </nav>;
-        }
-    }
-    else {
-        if (!user) {
-            TopMenu = <li><Link to="/login">{t("top-menu.register")}</Link></li>;
-        }
-        else {
-            TopMenu = <>
-                <li><Link to='/profile'>{t("top-menu.hi")}, {name}<img src={user.photoURL} className="image-account-menu-top-bar" /></Link></li>
-                <li><Link to='/dashboard'>{t("top-menu.personal-area")}</Link></li>
-                <li><Link to='/dashboard'>{t("top-menu.your-teams")}</Link></li>
-                <li><Link to='/dashboard'>{t("top-menu.your-matches")}</Link> </li>
-                <li><Link to='/dashboard'>{t("top-menu.your-competitions")}</Link></li>
-                <li><Link to='/estadisticas'>{t("top-menu.your-stats")}</Link></li>
-            </>;
-        }
-
-    }
-    return TopMenu;
 }
 
 export default function TopBar() {
@@ -128,20 +76,20 @@ export default function TopBar() {
     function isInViewport(elem) {
         var distance = elem.getBoundingClientRect();
         return (
-          distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+            distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
         );
-      }
-      var elem = document.getElementsByClassName('header-container')[0];
-      window.addEventListener("scroll", function () {
-        if (isInViewport(elem)){
-            document.getElementsByClassName("top-bar")[0].style.height=0;
-            document.getElementsByClassName("country-logo-top-bar")[0].style.height='0';
-        } 
-        else {
-            document.getElementsByClassName("top-bar")[0].style.height="18vh";
-            document.getElementsByClassName("country-logo-top-bar")[0].style.height='50px';
+    }
+    var elem = document.getElementsByClassName('header-container')[0];
+    window.addEventListener("scroll", function () {
+        if (isInViewport(elem)) {
+            document.getElementsByClassName("top-bar")[0].style.height = 0;
+            document.getElementsByClassName("country-logo-top-bar")[0].style.height = '0';
         }
-      });
+        else {
+            document.getElementsByClassName("top-bar")[0].style.height = "18vh";
+            document.getElementsByClassName("country-logo-top-bar")[0].style.height = '50px';
+        }
+    });
     return (
         <>
             <Popup
@@ -164,7 +112,15 @@ export default function TopBar() {
                 </Link>
                 <div className="menus-top-bar">
                     <div className="account-menu-top-bar">
-                        <TopMenu option="1" name={name} user={user} />
+                        <Link to="#" className='social-media'>
+                            <i style={{ fontSize: "xx-large", color: "#a09600" }} class="fa-brands fa-instagram"></i>
+                        </Link>
+                        <Link to="#" className='social-media'>
+                            <i style={{ fontSize: "xx-large", color: "#a09600" }} class="fa-brands fa-twitter"></i>
+                        </Link>
+                        <Link to="#" className='social-media'>
+                            <i style={{ fontSize: "xx-large", color: "#a09600" }} class="fa-brands fa-linkedin"></i>
+                        </Link>
                     </div>
                     <nav className="main-menu-top-bar">
                         <ul className="list-main-menu-top-bar">
