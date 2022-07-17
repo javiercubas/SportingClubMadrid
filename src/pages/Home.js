@@ -24,22 +24,22 @@ export default function Home() {
                     hora = '20:00'
                     competicion = 'Pretemporada'
                     equipoLocal = 'Sporting Club Madrid'
-                    equipoVisitante = 'Sporting Club Madrid'
+                    equipoVisitante = 'Agrupación Deportiva Colmenar'
                 />
                 <CardMatch
-                    equipo = 'Masculino'
+                    equipo = 'Femenino'
                     fecha = '01/01/2022'
                     hora = '20:00'
                     competicion = 'Pretemporada'
                     equipoLocal = 'Sporting Club Madrid'
-                    equipoVisitante = 'Sporting Club Madrid'
+                    equipoVisitante = 'Atletico De Madrid'
                 />
                 <CardMatch
-                    equipo = 'Masculino'
+                    equipo = 'U-19'
                     fecha = '01/01/2022'
                     hora = '20:00'
                     competicion = 'Pretemporada'
-                    equipoLocal = 'Sporting Club Madrid'
+                    equipoLocal = 'Villarreal'
                     equipoVisitante = 'Sporting Club Madrid'
                 />
             </div>
