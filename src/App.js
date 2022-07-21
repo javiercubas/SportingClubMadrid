@@ -11,6 +11,7 @@ import React from "react";
 import BlitzTournaments from './pages/BlitzTournaments';
 import Dashboard from './pages/Dashboard';
 import HeaderLogo from './components/HeaderLogo/HeaderLogo';
+import Men from './pages/Men';
 
 
 export default function App() {
@@ -31,6 +32,13 @@ export default function App() {
         <Route path="/stats" exact element={<Estadisticas />} />
         <Route path="/contact" exact element={<Home />} />
         <Route path="/dashboard" exact element={<Dashboard />} />
+        <Route path="/mission" exact element={<Dashboard />} />
+        <Route path="/our-program" exact element={<Dashboard />} />
+        <Route path="/club-staff" exact element={<Dashboard />} />
+        <Route path="/women" exact element={<Dashboard />} />
+        <Route path="/men" exact element={<Men />} />
+        <Route path="/universities" exact element={<Dashboard />} />
+        <Route path="/blog" exact element={<Dashboard />} />
       </Routes>
     </>
   );
