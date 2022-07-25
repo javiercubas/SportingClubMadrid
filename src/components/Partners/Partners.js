@@ -3,8 +3,8 @@ import './Partners.css';
 export default function Partners() {
     return (
         <div className="grid-partners">
-            <div className="partner--text">
-                <h3>Our Sponsors and partners</h3>
+            <div className="partner__text">
+                <h3>Our Sponsors and <span id="partner__text--yellow">partners</span></h3>
             </div>
             <div className="partner">
                 <a href="http://madridsoccertour.com/" target="_blank"><img className="partner--img" src='./assets/mst.webp' /></a>
