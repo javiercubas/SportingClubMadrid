@@ -9,7 +9,7 @@
     box-sizing: border-box;
     padding: 0 30px;
 }
-.partner--text{
+.partner__text{
     text-align: center;
     margin: auto 0;
     font-family: Teko, Arial, Helvetica, sans-serif;
@@ -21,6 +21,11 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+#partner__text--yellow{
+    line-height: 3vw;
+    color: #a09600;
+    font-size: 4vw;
 }
 .partner--img{
     width: 32vh;
