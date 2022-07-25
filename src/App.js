@@ -12,6 +12,7 @@ import BlitzTournaments from './pages/BlitzTournaments';
 import Dashboard from './pages/Dashboard';
 import HeaderLogo from './components/HeaderLogo/HeaderLogo';
 import Men from './pages/Men';
+import Footer from './components/Footer/Footer';
 
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/universities" exact element={<Dashboard />} />
         <Route path="/blog" exact element={<Dashboard />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

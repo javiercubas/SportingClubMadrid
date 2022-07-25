@@ -10,6 +10,9 @@ import CardMatch from '../components/Partidos/cardMatch.js';
 import './Home.css';
 import TablaClasificacion from '../components/TablaClasificacion/TablaClasificacion';
 import { countDown } from '../components/Partidos/Timer/countDown';
+import ContactForm from '../components/ContactForm/ContactForm';
+import TwitterTimeline from '../components/TwitterTimeline/TwitterTimeline';
+import Partners from '../components/Partners/Partners';
 
 export default function Home() {
     return (
@@ -36,6 +39,7 @@ export default function Home() {
                     equipoVisitante = 'Atletico De Madrid'
                 />
             </div>
+            <Partners/>
             <div style={{ height: "100%", width: "95%" }}>
                 <h2 className='title-matches'>Tablas de Clasificación</h2>
             </div>
@@ -44,7 +48,7 @@ export default function Home() {
             <TablaClasificacion />
             <TablaClasificacion />
             </div>
-            
+            <TwitterTimeline/>
         </>
     )
 }
