@@ -6,8 +6,27 @@
     display: grid;
     grid-template-columns: 1.5fr repeat(4, 1fr);
     grid-template-rows: 1fr;
+    box-sizing: border-box;
+    padding: 0 30px;
 }
-
+.partner--text{
+    text-align: center;
+    margin: auto 0;
+    font-family: Teko, Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 600;
+    line-height: 2.5vw;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.partner--img{
+    width: 32vh;
+    height: 17vh;
+    object-fit: contain;
+}
 .partner{
     width: 100%;
     height: 100%;
@@ -18,8 +37,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
-img{
-    height: 15vh;
-    object-fit: cover;
+.partner a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
