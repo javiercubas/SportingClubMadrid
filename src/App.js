@@ -1,5 +1,4 @@
 import './App.css';
-import TopBar from './components/TopBar/TopBar';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -19,7 +18,6 @@ export default function App() {
   return (
     <>
       <HeaderLogo/>
-      <TopBar/>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/login" exact element={<Login />} />

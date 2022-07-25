@@ -17,7 +17,7 @@ export default function CountDown() {
         const textMinute = Math.floor((remainingTime % hour) / minute);
         const textSeconds = Math.floor((remainingTime % minute) / second);
 
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < document.getElementsByClassName("dayMatch").length; i++) {
             document.getElementsByClassName("dayMatch")[i].innerText = textDay;
             document.getElementsByClassName("hour")[i].innerText = textHour;
             document.getElementsByClassName("minute")[i].innerText = textMinute;

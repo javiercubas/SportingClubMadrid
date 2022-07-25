@@ -17,43 +17,49 @@ export default function Footer() {
             </a>
           </div>
           <div class="footer-menu">
-            <h2 class="footer-menu-name"> Get Started</h2>
+            <h2 class="footer-menu-name"> Join us!</h2>
             <ul id="menu-get-started" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Start</a>
+                <a href="#">Mission</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Documentation</a>
+                <a href="#">Our Program</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Installation</a>
+                <a href="#">Universities</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="#">Club Staff</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer-content-column">
           <div class="footer-menu">
-            <h2 class="footer-menu-name"> Company</h2>
+            <h2 class="footer-menu-name"> Mens</h2>
             <ul id="menu-company" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Contact</a>
+                <a href="#">Roster</a>
               </li>
               <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="#">News</a>
+                <a href="#">Matches</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Careers</a>
+                <a href="#">Standings</a>
               </li>
             </ul>
           </div>
           <div class="footer-menu">
-            <h2 class="footer-menu-name"> Legal</h2>
+            <h2 class="footer-menu-name">Women</h2>
             <ul id="menu-legal" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                <a href="#">Privacy Notice</a>
+                <a href="#">Roster</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Terms of Use</a>
+                <a href="#">Matches</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Standings</a>
               </li>
             </ul>
           </div>
@@ -63,21 +69,27 @@ export default function Footer() {
             <h2 class="footer-menu-name"> Quick Links</h2>
             <ul id="menu-quick-links" class="footer-menu-list">
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
+                <a target="_blank" rel="noopener noreferrer" href="#">Home</a>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
+                <a target="_blank" rel="noopener noreferrer" href="#">Mission</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Security</a>
+                <a href="#">Our Program</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Blog</a>
+                <a href="#">Club Staff</a>
               </li>
               <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                <a href="#">Customers</a></li>
+                <a href="#">Women</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Reviews</a>
+                <a href="#">Men</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Universities</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
