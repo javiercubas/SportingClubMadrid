@@ -13,7 +13,7 @@ import Dashboard from './pages/Dashboard';
 import HeaderLogo from './components/HeaderLogo/HeaderLogo';
 import Men from './pages/Men';
 import Footer from './components/Footer/Footer';
-
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 export default function App() {
   return (
@@ -41,6 +41,7 @@ export default function App() {
         <Route path="/universities" exact element={<Dashboard />} />
         <Route path="/blog" exact element={<Dashboard />} />
       </Routes>
+      <ScrollToTop/>
       <Footer/>
     </>
   );
