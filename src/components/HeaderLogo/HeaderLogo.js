@@ -5,9 +5,22 @@ import { query, collection, getDocs, where, connectFirestoreEmulator } from "fir
 import Popup from "../Popup/Popup";
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
-import { Languages } from "../TopBar/TopBar";
 import { Link } from "react-router-dom";
 import "./HeaderLogo.css";
+
+export function Languages(props) {
+  const { country, language } = props;
+  return (
+      <button className="country-grid-flags" onClick={() => {
+          const function1 = i18next.changeLanguage(country)
+          const function2 = document.getElementsByClassName('overlay')[0].style.visibility = "hidden"
+          const function3 = document.getElementsByClassName('overlay')[0].style.opacity = "0"
+      }}>
+          <img className="img-country-grid-flags" src={`/assets/${language}.png`} />
+          <p className="name-country-grid-flags">{language}</p>
+      </button>
+  )
+}
 
 const HeaderLogo = () => {
   const [user, loading, error] = useAuthState(auth);
