@@ -4,8 +4,7 @@ import { useTranslation } from "react-i18next";
 
 
 
-export default function Sidebar(props) {
-    const { user, name } = props;
+export default function Sidebar() {
     const [isOpen, setIsopen] = useState(false);
 
     const Sidebar = () => {

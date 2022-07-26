@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
 import { Link } from "react-router-dom";
 import "./HeaderLogo.css";
+import Sidebar from "../TopBar/Sidebar";
 
 export function Languages(props) {
   const { country, language } = props;
@@ -122,6 +123,7 @@ const HeaderLogo = () => {
           </nav>
           <i className="fas fa-search"></i>
         </div>
+        <Sidebar/>
       </div>
     </>
   )
