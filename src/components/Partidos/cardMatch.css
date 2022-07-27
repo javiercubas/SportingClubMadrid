@@ -10,7 +10,6 @@
     border-radius: 4px;
     font-family: Teko;
     box-shadow: 0px 0px 20px 0px #0007;
-    margin: 5% 0;
 }
 
 .content-caja{
@@ -120,6 +119,8 @@
 @media only screen and (orientation: portrait) {
     .caja{
         width: 90%;
+        height: auto;
+        margin: 5% 0;
     }
 
     .equipo {

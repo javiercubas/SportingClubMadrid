@@ -23,14 +23,14 @@ export default function Sidebar() {
                 </div>
                 <div className="sd-body">
                     <ul>
-                        <li><Link to='/' exact>{t("main-menu.home")}</Link></li>
-                        <li><Link to='/teams' exact>{t("main-menu.teams")}</Link></li>
-                        <li><Link to='/national-teams' exact>{t("main-menu.national-teams")}</Link></li>
-                        <li><Link to='/leagues' exact>{t("main-menu.leagues")}</Link></li>
-                        <li><Link to='/tournaments' exact>{t("main-menu.tournaments")}</Link></li>
-                        <li><Link to='/blitz-tournaments' exact>{t("main-menu.blitz-tournaments")}</Link></li>
-                        <li><Link to='/friendly-matches' exact>{t("main-menu.friendly-matches")}</Link></li>
-                        <li><Link to='/contact' exact>{t("main-menu.contact")}</Link></li>
+                        <li><Link to='/' exact onClick={Sidebar}>{t("main-menu.home")}</Link></li>
+                        <li><Link to='/teams' exact onClick={Sidebar}>{t("main-menu.teams")}</Link></li>
+                        <li><Link to='/national-teams' exact onClick={Sidebar}>{t("main-menu.national-teams")}</Link></li>
+                        <li><Link to='/leagues' exact onClick={Sidebar}>{t("main-menu.leagues")}</Link></li>
+                        <li><Link to='/tournaments' exact onClick={Sidebar}>{t("main-menu.tournaments")}</Link></li>
+                        <li><Link to='/blitz-tournaments' exact onClick={Sidebar}>{t("main-menu.blitz-tournaments")}</Link></li>
+                        <li><Link to='/friendly-matches' exact onClick={Sidebar}>{t("main-menu.friendly-matches")}</Link></li>
+                        <li><Link to='/contact' exact onClick={Sidebar}>{t("main-menu.contact")}</Link></li>
                     </ul>
                 </div>
             </div>

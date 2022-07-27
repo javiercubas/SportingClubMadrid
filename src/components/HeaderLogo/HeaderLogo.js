@@ -97,13 +97,13 @@ const HeaderLogo = () => {
           </Link>
           <div className='social-media-header'>
             <Link to="#" className='social-media'>
-              <i style={{ fontSize: "xx-large", color: "#a09600" }} class="fa-brands fa-instagram"></i>
+              <i style={{ fontSize: "xx-large", color: "#a09600" }} className="fa-brands fa-instagram"></i>
             </Link>
             <Link to="#" className='social-media'>
-              <i style={{ fontSize: "xx-large", color: "#a09600" }} class="fa-brands fa-twitter"></i>
+              <i style={{ fontSize: "xx-large", color: "#a09600" }} className="fa-brands fa-twitter"></i>
             </Link>
             <Link to="#" className='social-media'>
-              <i style={{ fontSize: "xx-large", color: "#a09600" }} class="fa-brands fa-linkedin"></i>
+              <i style={{ fontSize: "xx-large", color: "#a09600" }} className="fa-brands fa-linkedin"></i>
             </Link>
           </div>
         </div>

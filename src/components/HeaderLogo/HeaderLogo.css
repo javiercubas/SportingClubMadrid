@@ -428,6 +428,7 @@
     margin-right: 3%;
     position: absolute;
     right: 15px;
+    z-index:1;
 }
 
 .shadow-md {
@@ -496,7 +497,7 @@
 }
 
 .sd-body ul li:hover {
-    background-color: steelblue;
+    background-color: rgb(160, 150, 0);
 }
 
 .sd-body ul li a {

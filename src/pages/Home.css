@@ -3,6 +3,7 @@
     text-transform: uppercase;
     position: relative;
     color: #a39a01;
+    margin-top: 5%;
 }
 
 .title-matches::after{
@@ -24,13 +25,20 @@ background: linear-gradient(90deg, rgba(163,154,1,1) 0%, rgba(163,154,1,0) 100%)
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 5%;
+    margin-top: 5%;
 }
 
 @media only screen and (orientation: portrait) {
     .matches{
-        height: 75vh;
+        height: auto;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         justify-items: center;
+        grid-gap: 0;
+        margin-bottom: 5%;
     }   
+
+    .title-matches{
+        width: 90%;
+    }
 }
