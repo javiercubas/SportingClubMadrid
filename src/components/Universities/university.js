@@ -28,7 +28,7 @@ export default function University() {
                     <div className="american">
                         <h2 className="text-subtitle">AMERICAN UNIVERSITY</h2>
                     </div>
-                    <div className="images-university">
+                    <div className="images-university" style={{gridTemplateColumns: "repeat(2, 1fr)"}}>
                         <div className="img SaintLouis" />
                         <div className="img suffolk" />
                     </div>
