@@ -91,7 +91,7 @@ const HeaderLogo = () => {
         <div className='bg-header-container' />
         <div className='main-header-container'>
           <button className="country-logo-header" style={{ backgroundImage: `url(/assets/${language}.png)` }} onClick={(e) => setVisibility(!visibility)} />
-          <Link to="#" className='content-header-container'>
+          <Link to="/" className='content-header-container'>
             <img className='logo-header' src='https://static.wixstatic.com/media/d78913_5b532f30dd3f4c8999ea776d97203a61~mv2.png/v1/fill/w_244,h_317,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot__125_-removebg-preview.png' />
             <h1 className='title-header'>SPORTING CLUB MADRID</h1>
           </Link>

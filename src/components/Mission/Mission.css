@@ -1,10 +1,12 @@
 .mission{
-    width: 100vw;
-    height: 75vh;
+    width: 100%;
+    height: auto;
     background-image: url('./assets/fondo_mission.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 189px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mission__title{
@@ -24,20 +26,24 @@
 }
 .mission__grid{
     justify-content: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     height: 80vh;
+    width: 95%;
     
 }
-.mission__grid__card{
+.mission__grid__card {
     height: 80%;
-    width: 30vw;
+    width: 100%;
     max-width: 500px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 15px 0px #0007;
     box-sizing: border-box;
     padding: 15px 6px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
 }
 
 .mission__grid__card:hover{
@@ -60,14 +66,157 @@
 }
 .mission__grid__card--imgContainer{
     width: 100%;
-    height: 70%;
+    height: 100%;
     display: flex;
 }
-.mission__grid__card__imgContainer--img{
+.mission__grid__card__imgContainer--img {
     width: 90%;
-    height: 90%;
-    max-height: 400px;
+    height: 100%;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 5%;
     margin: auto auto;
 }
+
+/* Media Query For different screens */
+@media (min-width: 320px) and (max-width: 479px) and (max-height: 700px) {
+    /* Iphone small Portrait */
+    .mission__grid{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 90%;
+        gap: 50px;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        grid-template-rows: repeat(3, 0fr);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) and (min-height: 700px) {
+    /* Iphone big Portrait */
+
+    .mission__grid{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 90%;
+        gap: 50px;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        grid-template-rows: repeat(3, 0fr);
+    }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 599px) {
+    /* Surface Duo Portrait */
+   
+    .mission__grid{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 90%;
+        gap: 50px;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        grid-template-rows: repeat(3, 0fr);
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 800px) and (orientation: landscape) {
+    /* Iphone SE Landscape */
+
+    .mission__grid{
+        height: auto;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        grid-template-rows: repeat(3, 0fr);
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    /* Ipad Mini Portrait */
+      
+    .mission__grid{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 90%;
+        gap: 50px;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        max-width: none;
+        grid-template-rows: repeat(3, 0fr);
+    }
+
+    .mission__grid__card__imgContainer--img{
+        max-height: 300px;
+    }
+
+}
+
+@media (min-width: 801px) and (max-width:1024px) and (orientation: landscape) {
+    /* Iphone XR Landscape */
+    
+    .mission__grid{
+        height: auto;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        grid-template-rows: repeat(3, 0fr);
+    }
+
+}
+
+@media (min-width: 801px) and (max-width:1024px) and (orientation: portrait) {
+    /* Ipad Air Portrait */
+
+    .mission__grid{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 90%;
+        gap: 50px;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        max-width: none;
+        grid-template-rows: repeat(3, 0fr);
+    }
+
+    .mission__grid__card__imgContainer--img{
+        max-height: 300px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    /* Ipad Landscape */
+   
+    .mission__grid{
+        height: auto;
+    }
+
+    .mission__grid__card{
+        height: 100%;
+        grid-template-rows: repeat(3, 0fr);
+    }
+
+}
+
