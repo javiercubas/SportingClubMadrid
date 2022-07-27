@@ -10,6 +10,7 @@ export default function University() {
             </div>
             <div class="button-radio">
                 <a className='info' href="">MORE INFO</a>
+                <i class="fa-solid fa-circle-info"></i>
             </div>
             <div class="universities">
                 <div className="div">
