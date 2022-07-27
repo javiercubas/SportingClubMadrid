@@ -1,10 +1,19 @@
+.mission{
+    width: 100vw;
+    height: 75vh;
+    background-image: url('./assets/fondo_mission.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 189px;
+}
+
 .mission__title{
     text-transform: uppercase;
     margin-top: 20px;
     
 }
 #mission__title--main{
-    font-size: 3vw;
+    font-size: 50px;
     font-weight: 600;
     font-family: Teko;
     text-align: center;
@@ -14,24 +23,27 @@
     width: 45%;
 }
 .mission__grid{
+    justify-content: center;
     display: flex;
     gap: 30px;
+    height: 80vh;
+    
 }
 .mission__grid__card{
+    height: 80%;
     width: 30vw;
     max-width: 500px;
-    height: 400px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px #0003;
+    box-shadow: 0px 0px 15px 0px #0007;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 15px 6px;
 }
 
 .mission__grid__card:hover{
     
     background-color: white;
-    box-shadow: 0px 0px 20px 0px #0007;
+    box-shadow: 0px 0px 20px 0px #000B;
 }
 .mission__grid__card--title{
     text-transform: uppercase;
@@ -45,4 +57,17 @@
     font-family: Poppins;
     text-align: center;
     padding: 10px;
+}
+.mission__grid__card--imgContainer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.mission__grid__card__imgContainer--img{
+    width: 90%;
+    height: 90%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin: auto auto;
 }
