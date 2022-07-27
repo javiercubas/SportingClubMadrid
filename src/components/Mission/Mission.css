@@ -1,0 +1,48 @@
+.mission__title{
+    text-transform: uppercase;
+    margin-top: 20px;
+    
+}
+#mission__title--main{
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: Teko;
+    text-align: center;
+}
+.mission__separator{
+    margin: 0px auto 40px;
+    width: 45%;
+}
+.mission__grid{
+    display: flex;
+    gap: 30px;
+}
+.mission__grid__card{
+    width: 30vw;
+    max-width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #0003;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.mission__grid__card:hover{
+    
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #0007;
+}
+.mission__grid__card--title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-family: Teko ;
+}
+
+.mission__grid__card--p{
+    margin-top: 10px;
+    font-family: Poppins;
+    text-align: center;
+    padding: 10px;
+}

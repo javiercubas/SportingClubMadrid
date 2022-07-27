@@ -13,6 +13,7 @@ import HeaderLogo from './components/HeaderLogo/HeaderLogo';
 import Men from './pages/Men';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Mission from './components/Mission/Mission';
 
 export default function App() {
   return (
@@ -31,7 +32,7 @@ export default function App() {
         <Route path="/stats" exact element={<Estadisticas />} />
         <Route path="/contact" exact element={<Home />} />
         <Route path="/dashboard" exact element={<Dashboard />} />
-        <Route path="/mission" exact element={<Dashboard />} />
+        <Route path="/mission" exact element={<Mission />} />
         <Route path="/our-program" exact element={<Dashboard />} />
         <Route path="/club-staff" exact element={<Dashboard />} />
         <Route path="/women" exact element={<Dashboard />} />
