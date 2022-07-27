@@ -13,6 +13,7 @@ import { countDown } from '../components/Partidos/Timer/countDown';
 import ContactForm from '../components/ContactForm/ContactForm';
 import TwitterTimeline from '../components/TwitterTimeline/TwitterTimeline';
 import Partners from '../components/Partners/Partners';
+import University from '../components/Universities/university';
 
 export default function Home() {
     return (
@@ -40,6 +41,7 @@ export default function Home() {
                 />
             </div>
             <Partners/>
+            <University/>
             <div style={{ height: "100%", width: "95%" }}>
                 <h2 className='title-matches'>Tablas de Clasificación</h2>
             </div>
