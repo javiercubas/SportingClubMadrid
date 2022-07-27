@@ -54,6 +54,7 @@
 }
 
 /* Media Query For different screens */
+
 @media (min-width: 320px) and (max-width: 479px) and (max-height: 700px) {
   /* Iphone small Portrait */
 
@@ -64,8 +65,8 @@
   }
 
   .partner__text {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 45px;
+    line-height: 45px;
   }
 
 }
