@@ -1,0 +1,54 @@
+.box-roster{
+    height: 70vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-roster{
+    height: 10vh;
+    width: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.list-roster{
+    display: block;
+    white-space: nowrap;
+    list-style-type: none;
+    margin: 1.875rem 0 0;
+    padding: 0;
+    max-height: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.position-roster{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    border-radius: 0.75rem;
+    background-color: transparent;
+    font-size: 0.813rem;
+    font-weight: 400;
+    padding: 0.125rem 0.5rem;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    white-space: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #444;
+    color: white;
+}
+
+.grid-content-roster{
+    height: 100%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}

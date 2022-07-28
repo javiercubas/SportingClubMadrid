@@ -3,11 +3,17 @@ import Promo from '../components/Promo/Promo';
 import CardMatch from '../components/Partidos/cardMatch.js';
 import './Home.css';
 import TablaClasificacion from '../components/TablaClasificacion/TablaClasificacion';
+import Roster from '../components/Roster/Roster';
 
 export default function Men() {
     return (
         <>
-            <Promo />
+            <Roster
+                porteros = "2"
+                defensas = "8"
+                mediocentros = "8"
+                delanteros = "6"
+            />
             <div style={{ height: "100%", width: "95%", display:"flex", justifyContent: "center" }}>
                 <h2 className='title-matches'>Next Matches - Mens</h2>
             </div>
