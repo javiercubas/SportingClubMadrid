@@ -6,8 +6,7 @@ export default function Promo() {
     const [t] = useTranslation("global");
     return (
         <section className="promo" id="landing">
-            <img src="./assets/foto1.jpg" className='bg-promo'/>
-            <img src="./assets/foto2.jpg" className='bg-promo2'/>
+            <div className='bg-promo'/>
             <div className="contenido-promo">
                 <h2 className="titulo-promo">are you ready<br/>to
                     <h2 className='titulo2-promo'> change</h2>
