@@ -32,7 +32,7 @@ export default function Home() {
                     equipoVisitante = 'Agrupación Deportiva Colmenar'
                 />
                 <CardMatch
-                    equipo = 'Femenino'
+                    equipo = 'Masculino B'
                     fecha = '01/01/2022'
                     hora = '20:00'
                     competicion = 'Pretemporada'
@@ -41,6 +41,27 @@ export default function Home() {
                 />
             </div>
             <University/>
+            <div style={{ height: "100%", width: "95%", display:"flex", justifyContent: "center" }}>
+                <h2 className='title-matches'>Next Matches - Women</h2>
+            </div>
+            <div className='matches'>
+                <CardMatch
+                    equipo = 'Femenino'
+                    fecha = '01/01/2022'
+                    hora = '20:00'
+                    competicion = 'Pretemporada'
+                    equipoLocal = 'Sporting Club Madrid'
+                    equipoVisitante = 'Agrupación Deportiva Colmenar'
+                />
+                <CardMatch
+                    equipo = 'Femenino B'
+                    fecha = '01/01/2022'
+                    hora = '20:00'
+                    competicion = 'Pretemporada'
+                    equipoLocal = 'Sporting Club Madrid'
+                    equipoVisitante = 'Atletico De Madrid'
+                />
+            </div>
             <Partners/>
             {/* <div style={{ height: "100%", width: "95%" }}>
                 <h2 className='title-matches'>Tablas de Clasificación</h2>
