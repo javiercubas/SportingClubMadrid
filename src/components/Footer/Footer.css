@@ -233,6 +233,10 @@
     color: #fff;
     text-decoration: none;
   }
+
+  .footer-content-column ul li a:hover{
+    color: black;
+  }
   
   /* Media Query For different screens */
   @media (min-width: 320px) and (max-width: 479px) {

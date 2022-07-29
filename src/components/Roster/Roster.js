@@ -57,10 +57,18 @@ export default function Roster(props) {
           <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="portero" dorsal = "1" />
           <CardPlayer nombre = "javier" apellido = "cubas" posicion="portero" dorsal = "13" />
           <CardPlayer nombre = "miguel" apellido = "pereira" posicion="portero" dorsal = "30" />
-          <CardPlayer posicion="defensa" />
-          <CardPlayer posicion="defensa" />
-          <CardPlayer posicion="defensa" />
-          <CardPlayer posicion="defensa" />
+          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="defensa" dorsal = "1" />
+          <CardPlayer nombre = "javier" apellido = "cubas" posicion="defensa" dorsal = "13" />
+          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="defensa" dorsal = "30" />
+          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="defensa" dorsal = "1" />
+          <CardPlayer nombre = "javier" apellido = "cubas" posicion="mediocentro" dorsal = "13" />
+          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="mediocentro" dorsal = "30" />
+          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="mediocentro" dorsal = "1" />
+          <CardPlayer nombre = "javier" apellido = "cubas" posicion="mediocentro" dorsal = "13" />
+          <CardPlayer nombre = "javier" apellido = "cubas" posicion="delantero" dorsal = "13" />
+          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="delantero" dorsal = "30" />
+          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="delantero" dorsal = "1" />
+          <CardPlayer nombre = "javier" apellido = "cubas" posicion="delantero" dorsal = "13" />
         </ul>
       </div>
     </div>
