@@ -35,14 +35,14 @@ export default function Men() {
                     equipoVisitante = 'Atletico De Madrid'
                 />
             </div>
-            <div style={{ height: "100%", width: "95%" }}>
+            {/* <div style={{ height: "100%", width: "95%" }}>
                 <h2 className='title-matches'>Tablas de Clasificación</h2>
             </div>
             <div className='matches'>
             <TablaClasificacion />
             <TablaClasificacion />
             <TablaClasificacion />
-            </div>
+            </div> */}
             
         </>
     )

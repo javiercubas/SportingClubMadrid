@@ -42,6 +42,8 @@ export default function Roster(props) {
 
   return (
     <div className="box-roster" >
+      <h2 className="title-roster">Jugadores</h2>
+      <hr className='hr-roster'/>
       <nav className="menu-roster">
         <ul className="list-roster">
           <li className="position-roster" onClick={() => filterSelection('portero', 0)}>Porteros</li>
@@ -50,13 +52,16 @@ export default function Roster(props) {
           <li className="position-roster" onClick={() => filterSelection('delantero', 3)}>Delanteros</li>
         </ul>
       </nav>
-      <div className="grid-content-roster">
-        <CardPlayer posicion="portero" />
-        <CardPlayer posicion="portero" />
-        <CardPlayer posicion="portero" />
-        <CardPlayer posicion="defensa" />
-        <CardPlayer posicion="defensa" />
-        <CardPlayer posicion="defensa" />
+      <div className="players-swiper">
+        <ul className="players-list">
+          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="portero" dorsal = "1" />
+          <CardPlayer nombre = "javier" apellido = "cubas" posicion="portero" dorsal = "13" />
+          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="portero" dorsal = "30" />
+          <CardPlayer posicion="defensa" />
+          <CardPlayer posicion="defensa" />
+          <CardPlayer posicion="defensa" />
+          <CardPlayer posicion="defensa" />
+        </ul>
       </div>
     </div>
   )
