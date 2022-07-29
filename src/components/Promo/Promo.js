@@ -1,6 +1,7 @@
 import React from 'react'
 import './Promo.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Promo() {
     const [t] = useTranslation("global");
@@ -13,7 +14,7 @@ export default function Promo() {
                     <h2 className="titulo-promo"> your<br/></h2>
                     <h2 className='titulo2-promo'>life?</h2>
                 </h2>
-                <button className='button-promo'>Apply Now</button>
+                <Link to="/contact" exact className='button-promo'>Apply Now</Link>
             </div>
 
         </section>

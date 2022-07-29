@@ -8,11 +8,11 @@ export default function University() {
                 <h1 className='text-title'>UNIVERSITY OPTIONS</h1>
                 <h3 className='text-info'>Full Bachelors and Masters degrees available in English in Madrid</h3>
             </div>
-            <div class="button-radio">
+            <div className="button-radio">
                 <a className='info' href="">MORE INFO</a>
-                <i class="fa-solid fa-circle-info"></i>
+                <i className="fa-solid fa-circle-info"></i>
             </div>
-            <div class="universities">
+            <div className="universities">
                 <div className="div">
                     <div className="private">
                         <h2 className="text-subtitle">PUBLIC SPANISH UNIVERSITY</h2>
