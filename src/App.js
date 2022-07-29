@@ -13,6 +13,7 @@ import Men from './pages/Men';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Mission from './components/Mission/Mission';
+import Contact from './components/Contact/Contact'
 
 export default function App() {
   return (
@@ -29,7 +30,7 @@ export default function App() {
         <Route path="/blitz-tournaments" exact element={<BlitzTournaments />} />
         <Route path="/friendly-matches" exact element={<Home />} />
         <Route path="/stats" exact element={<Estadisticas />} />
-        <Route path="/contact" exact element={<Home />} />
+        <Route path="/contact" exact element={<Contact />} />
         <Route path="/dashboard" exact element={<Home />} />
         <Route path="/mission" exact element={<Mission />} />
         <Route path="/our-program" exact element={<Home />} />
