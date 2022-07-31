@@ -5,7 +5,7 @@ export default function cardPlayer(props) {
     const { nombre, apellido, posicion, dorsal } = props;
     return (
         <li className={"box-player " + posicion}>
-            <a href={"/men/"+nombre+"-"+apellido} className='card-link'>
+            <a href={"/men/"+nombre.toLowerCase()+"-"+apellido.toLowerCase()} className='card-link'>
                 <span className="player-name">{apellido}</span>
                 <span className="player-position">{posicion}</span>
                 <span className="player-number">{dorsal}</span>

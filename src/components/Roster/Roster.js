@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardPlayer from '../cardPlayer/cardPlayer'
 import './Roster.css'
 
@@ -40,6 +40,18 @@ export default function Roster(props) {
     element.className = arr1.join(" ");
   }
 
+  const url = 'http://127.0.0.1:1337/api/players?populate=%2A'
+  const [todos, setTodos] = useState()
+  const fetchApi = async () => {
+    const response = await fetch(url)
+    const responseJSON = await response.json()
+    setTodos(responseJSON.data)
+    console.log(responseJSON.data)
+  }
+  
+  useEffect(() => {
+    fetchApi()
+  }, [])
   return (
     <div className="box-roster" >
       <h2 className="title-roster">Jugadores</h2>
@@ -54,21 +66,14 @@ export default function Roster(props) {
       </nav>
       <div className="players-swiper">
         <ul className="players-list">
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="portero" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="portero" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="portero" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="defensa" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="defensa" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="defensa" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="defensa" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="mediocentro" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="mediocentro" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="mediocentro" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="mediocentro" dorsal = "13" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="delantero" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="delantero" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="delantero" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="delantero" dorsal = "13" />
+        { !todos ? 'Cargando...' :
+        todos.map( (todo, index)=>{
+          todo.attributes.positions.data.map( position => {
+            console.log(position.attributes.Type)
+          })
+          
+          return <CardPlayer nombre = {todo.attributes.Name} apellido = {todo.attributes.Surname} posicion="portero" dorsal = {todo.attributes.Dorsal} />
+        } )}
         </ul>
       </div>
     </div>
