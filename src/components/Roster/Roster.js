@@ -46,7 +46,6 @@ export default function Roster(props) {
     const response = await fetch(url)
     const responseJSON = await response.json()
     setTodos(responseJSON.data)
-    console.log(responseJSON.data)
   }
   
   useEffect(() => {
@@ -58,21 +57,20 @@ export default function Roster(props) {
       <hr className='hr-roster'/>
       <nav className="menu-roster">
         <ul className="list-roster">
-          <li className="position-roster" onClick={() => filterSelection('portero', 0)}>Porteros</li>
-          <li className="position-roster" onClick={() => filterSelection('defensa', 1)}>Defensas</li>
-          <li className="position-roster" onClick={() => filterSelection('mediocentro', 2)}>Mediocentros</li>
-          <li className="position-roster" onClick={() => filterSelection('delantero', 3)}>Delanteros</li>
+          <li className="position-roster" onClick={() => filterSelection('Goalkeeper', 0)}>Porteros</li>
+          <li className="position-roster" onClick={() => filterSelection('Defense', 1)}>Defensas</li>
+          <li className="position-roster" onClick={() => filterSelection('Midfielder', 2)}>Mediocentros</li>
+          <li className="position-roster" onClick={() => filterSelection('Forward', 3)}>Delanteros</li>
         </ul>
       </nav>
       <div className="players-swiper">
         <ul className="players-list">
         { !todos ? 'Cargando...' :
         todos.map( (todo, index)=>{
-          todo.attributes.positions.data.map( position => {
-            console.log(position.attributes.Type)
+          const position = todo.attributes.positions.data.map( position => {
+            return position.attributes.Type;
           })
-          
-          return <CardPlayer nombre = {todo.attributes.Name} apellido = {todo.attributes.Surname} posicion="portero" dorsal = {todo.attributes.Dorsal} />
+          return <CardPlayer key={index} nombre = {todo.attributes.Name} apellido = {todo.attributes.Surname} posicion={position} dorsal = {todo.attributes.Dorsal} />
         } )}
         </ul>
       </div>
