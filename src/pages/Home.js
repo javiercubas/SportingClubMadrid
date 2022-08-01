@@ -10,7 +10,7 @@ import CardMatch from '../components/Partidos/cardMatch.js';
 import './Home.css';
 import TablaClasificacion from '../components/TablaClasificacion/TablaClasificacion';
 import { countDown } from '../components/Partidos/Timer/countDown';
-import ContactForm from '../components/ContactForm/ContactForm';
+import Contact from '../components/Contact/Contact';
 import TwitterTimeline from '../components/TwitterTimeline/TwitterTimeline';
 import Partners from '../components/Partners/Partners';
 import University from '../components/Universities/university';
