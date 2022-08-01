@@ -27,6 +27,13 @@ background: linear-gradient(90deg, rgba(163,154,1,1) 0%, rgba(163,154,1,0) 100%)
     grid-gap: 5%;
     margin-top: 5%;
 }
+.classification{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
 @media only screen and (orientation: portrait) {
     .matches{
@@ -36,6 +43,7 @@ background: linear-gradient(90deg, rgba(163,154,1,1) 0%, rgba(163,154,1,0) 100%)
         justify-items: center;
         grid-gap: 0;
         margin-bottom: 5%;
+        
     }   
 
     .title-matches{

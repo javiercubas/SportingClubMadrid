@@ -1,15 +1,20 @@
 hr{
-    width: 70%;
+    width: 60%;
     height: 1px;
     border: 0;
     background-color: black;
     margin-bottom: 50px;
+    margin: 0 auto;
 }
 .main{
-    width: 100%;
+    margin: 20px 0;
+    height: 100%;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0px 0px 20px 0px #0003;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px #000A;
 }
 .main__header{
     display: flex;
@@ -73,6 +78,7 @@ hr{
 }
 
 table{
+    width: 100%;
     margin: 15px auto 35px auto;
     border-collapse: collapse;
 }
@@ -113,4 +119,18 @@ td{
 
 #main td{
     font-weight: 700;
+}
+
+@media(max-width: 360px){
+    .main{
+        margin: 20px 0;
+        width: 70%;
+        height: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        box-shadow: 0px 0px 20px 0px #0003;
+        background-color: green;
+        border-radius: 25px;
+        box-shadow: 0px 0px 20px 0px #000A;
+    }
 }
