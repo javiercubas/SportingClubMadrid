@@ -50,6 +50,7 @@ export default function Roster(props) {
   
   useEffect(() => {
     fetchApi()
+    filterSelection('Goalkeeper', 0)
   }, [])
   return (
     <div className="box-roster" >
