@@ -13,8 +13,11 @@ import Men from './pages/Men';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Mission from './components/Mission/Mission';
+import UniversityPage from './components/Universities/UniversityPage/universityPage';
+
 import Women from './pages/Women';
 import Contact from './components/Contact/Contact'
+
 
 export default function App() {
   return (
@@ -38,7 +41,7 @@ export default function App() {
         <Route path="/club-staff" exact element={<Home />} />
         <Route path="/women" exact element={<Women />} />
         <Route path="/men" exact element={<Men />} />
-        <Route path="/universities" exact element={<Home />} />
+        <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Home />} />
       </Routes>
       <ScrollToTop/>

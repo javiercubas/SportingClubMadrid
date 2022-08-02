@@ -6,7 +6,7 @@ import TablaClasificacion from '../components/TablaClasificacion/TablaClasificac
 import Contact from '../components/Contact/Contact';
 import TwitterTimeline from '../components/TwitterTimeline/TwitterTimeline';
 import Partners from '../components/Partners/Partners';
-import University from '../components/Universities/university';
+import University from '../components/Universities/UniversityElement/university';
 
 export default function Home() {
     return (
