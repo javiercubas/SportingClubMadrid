@@ -13,7 +13,7 @@ import { countDown } from '../components/Partidos/Timer/countDown';
 import ContactForm from '../components/ContactForm/ContactForm';
 import TwitterTimeline from '../components/TwitterTimeline/TwitterTimeline';
 import Partners from '../components/Partners/Partners';
-import University from '../components/Universities/university';
+import University from '../components/Universities/UniversityElement/university';
 
 export default function Home() {
     return (

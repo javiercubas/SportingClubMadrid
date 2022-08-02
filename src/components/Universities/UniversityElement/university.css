@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7) url('../../../public/assets/american-flag.jpg');
+    background: rgba(0, 0, 0, 0.7) url('../../../../public/assets/american-flag.jpg');
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -65,7 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7) url('../../../public/assets/spanish-flag.webp');
+    background: rgba(0, 0, 0, 0.7) url('../../../../public/assets/spanish-flag.webp');
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -127,43 +127,43 @@
 }
 
 .SaintLouis {
-    background-image: url(../../../public/assets/university/SaintLouis.png);
+    background-image: url(../../../../public/assets/university/SaintLouis.png);
 }
 
 .suffolk {
-    background-image: url(../../../public/assets/university/suffolk.png);
+    background-image: url(../../../../public/assets/university/suffolk.png);
 }
 
 .UEM {
-    background-image: url(../../../public/assets/university/UEM.jpg);
+    background-image: url(../../../../public/assets/university/UEM.jpg);
 }
 
 .CEU {
-    background-image: url(../../../public/assets/university/CEU.png);
+    background-image: url(../../../../public/assets/university/CEU.png);
 }
 
 .IE {
-    background-image: url(../../../public/assets/university/IE.png);
+    background-image: url(../../../../public/assets/university/IE.png);
 }
 
 .SIU {
-    background-image: url(../../../public/assets/university/schiller.png);
+    background-image: url(../../../../public/assets/university/schiller.png);
 }
 
 .UAM {
-    background-image: url(../../../public/assets/university/UAM.png);
+    background-image: url(../../../../public/assets/university/UAM.png);
 }
 
 .UA {
-    background-image: url(../../../public/assets/university/UA.png);
+    background-image: url(../../../../public/assets/university/UA.png);
 }
 
 .UPM {
-    background-image: url(../../../public/assets/university/UPM.png);
+    background-image: url(../../../../public/assets/university/UPM.png);
 }
 
 .UC3 {
-    background-image: url(../../../public/assets/university/UC3.png);
+    background-image: url(../../../../public/assets/university/UC3.png);
 }
 
 .info {
