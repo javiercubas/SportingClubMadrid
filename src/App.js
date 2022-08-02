@@ -15,6 +15,10 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Mission from './components/Mission/Mission';
 import UniversityPage from './components/Universities/UniversityPage/universityPage';
 
+import Women from './pages/Women';
+import Contact from './components/Contact/Contact'
+
+
 export default function App() {
   return (
     <>
@@ -30,12 +34,12 @@ export default function App() {
         <Route path="/blitz-tournaments" exact element={<BlitzTournaments />} />
         <Route path="/friendly-matches" exact element={<Home />} />
         <Route path="/stats" exact element={<Estadisticas />} />
-        <Route path="/contact" exact element={<Home />} />
+        <Route path="/contact" exact element={<Contact />} />
         <Route path="/dashboard" exact element={<Home />} />
         <Route path="/mission" exact element={<Mission />} />
         <Route path="/our-program" exact element={<Home />} />
         <Route path="/club-staff" exact element={<Home />} />
-        <Route path="/women" exact element={<Home />} />
+        <Route path="/women" exact element={<Women />} />
         <Route path="/men" exact element={<Men />} />
         <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Home />} />

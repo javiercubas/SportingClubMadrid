@@ -1,16 +1,9 @@
 import React from 'react';
-import CarruselOpciones from '../components/CarruselOpciones/CarruselOpciones';
-import Carrusel from '../components/Carrusel/Carrusel';
-import TOTW from '../components/TOTW/TOTW';
 import Promo from '../components/Promo/Promo';
-import EquiposHome from '../components/EquiposHome/EquiposHome'
-import WebStats from '../components/WebStats/WebStats';
-import TOTW2 from '../components/TOTW/TOTW2';
 import CardMatch from '../components/Partidos/cardMatch.js';
 import './Home.css';
 import TablaClasificacion from '../components/TablaClasificacion/TablaClasificacion';
-import { countDown } from '../components/Partidos/Timer/countDown';
-import ContactForm from '../components/ContactForm/ContactForm';
+import Contact from '../components/Contact/Contact';
 import TwitterTimeline from '../components/TwitterTimeline/TwitterTimeline';
 import Partners from '../components/Partners/Partners';
 import University from '../components/Universities/UniversityElement/university';
@@ -63,15 +56,16 @@ export default function Home() {
                 />
             </div>
             <Partners/>
-            {/* <div style={{ height: "100%", width: "95%" }}>
+           <div style={{ height: "100%", width: "95%" }}>
                 <h2 className='title-matches'>Tablas de Clasificación</h2>
             </div>
-            <div className='matches'>
-            <TablaClasificacion />
-            <TablaClasificacion />
-            <TablaClasificacion />
+            <div class="classification">
+                <TablaClasificacion/>
+                <TablaClasificacion/>
+                <TablaClasificacion/>
             </div>
-            <TwitterTimeline/> */}
+            <Contact/>
+            {/*<TwitterTimeline/>*/}
         </>
     )
 }

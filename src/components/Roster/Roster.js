@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardPlayer from '../cardPlayer/cardPlayer'
 import './Roster.css'
 
 export default function Roster(props) {
-  const { porteros, defensas, mediocentros, delanteros } = props;
+  const { id } = props;
 
   function filterSelection(c, n) {
     var x, i;
@@ -40,35 +40,39 @@ export default function Roster(props) {
     element.className = arr1.join(" ");
   }
 
+  const url = 'http://127.0.0.1:1337/api/teams/'+id+'/?&populate[players][populate][0]=positions'
+  const [todos, setTodos] = useState()
+  const fetchApi = async () => {
+    const response = await fetch(url)
+    const responseJSON = await response.json()
+    setTodos(responseJSON.data.attributes)
+  }
+  
+  useEffect(() => {
+    fetchApi()
+    filterSelection('Goalkeeper', 0)
+  }, [])
   return (
     <div className="box-roster" >
       <h2 className="title-roster">Jugadores</h2>
       <hr className='hr-roster'/>
       <nav className="menu-roster">
         <ul className="list-roster">
-          <li className="position-roster" onClick={() => filterSelection('portero', 0)}>Porteros</li>
-          <li className="position-roster" onClick={() => filterSelection('defensa', 1)}>Defensas</li>
-          <li className="position-roster" onClick={() => filterSelection('mediocentro', 2)}>Mediocentros</li>
-          <li className="position-roster" onClick={() => filterSelection('delantero', 3)}>Delanteros</li>
+          <li className="position-roster" onClick={() => filterSelection('Goalkeeper', 0)}>Porteros</li>
+          <li className="position-roster" onClick={() => filterSelection('Defense', 1)}>Defensas</li>
+          <li className="position-roster" onClick={() => filterSelection('Midfielder', 2)}>Mediocentros</li>
+          <li className="position-roster" onClick={() => filterSelection('Fordward', 3)}>Delanteros</li>
         </ul>
       </nav>
       <div className="players-swiper">
         <ul className="players-list">
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="portero" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="portero" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="portero" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="defensa" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="defensa" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="defensa" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="defensa" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="mediocentro" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="mediocentro" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="mediocentro" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="mediocentro" dorsal = "13" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="delantero" dorsal = "13" />
-          <CardPlayer nombre = "miguel" apellido = "pereira" posicion="delantero" dorsal = "30" />
-          <CardPlayer nombre = "finnur" apellido = "viddarsson" posicion="delantero" dorsal = "1" />
-          <CardPlayer nombre = "javier" apellido = "cubas" posicion="delantero" dorsal = "13" />
+        { !todos ? 'Cargando...' :
+        todos.players.data.map( (player, index)=>{
+           const position = player.attributes.positions.data.map( position => {
+             return position.attributes.Type;
+           })
+          return <CardPlayer key={index} nombre = {player.attributes.Name} apellido = {player.attributes.Surname} posicion={position} dorsal = {player.attributes.Dorsal} />
+        } )}
         </ul>
       </div>
     </div>

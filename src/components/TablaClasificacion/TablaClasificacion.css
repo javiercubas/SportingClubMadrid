@@ -1,17 +1,24 @@
-hr{
-    width: 70%;
+hr {
+    width: 60%;
     height: 1px;
     border: 0;
     background-color: black;
     margin-bottom: 50px;
+    margin: 0 auto;
 }
-.main{
-    width: 100%;
+
+.main {
+    margin: 20px 0;
+    height: 100%;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0px 0px 20px 0px #0003;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px #000A;
 }
-.main__header{
+
+.main__header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,17 +27,20 @@ hr{
     gap: 5%;
     padding: 30px 0;
 }
-.main__header__leftLine{
+
+.main__header__leftLine {
     height: 100%;
     width: 5px;
     background-color: blue;
 }
-.main__header__text{
+
+.main__header__text {
     display: inline;
     text-transform: uppercase;
     font-weight: 600;
 }
-.main__header__button{
+
+.main__header__button {
     height: 50px;
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +53,8 @@ hr{
     padding: 0 20px;
     color: rgb(152, 152, 152);
 }
-.main__header__button:hover{
+
+.main__header__button:hover {
     height: 50px;
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -58,26 +69,30 @@ hr{
     cursor: pointer;
 }
 
-.main__enunciado{
+.main__enunciado {}
 
-}
-
-.main__enunciado--h1{
+.main__enunciado--h1 {
     text-transform: uppercase;
     text-align: center;
 }
 
 /*Propiedades de la tabla*/
-.main__header__text{
+.main__header__text {
     font-size: 25px;
 }
 
-table{
+table {
+    width: 100%;
     margin: 15px auto 35px auto;
     border-collapse: collapse;
 }
 
-.td--equipo{
+.table-row {
+    display: block;
+    width: 100%;
+}
+
+.td--equipo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -86,31 +101,43 @@ table{
     height: 100%;
 }
 
-.teamLogo{
+.teamLogo {
     height: 50px;
 }
 
-td, th{
+td,
+th {
     padding: 10px 20px;
     font-size: 20px;
     text-align: center;
     margin: 0;
+    width: inherit;
 }
 
-#th--club{
+#th--club {
     text-align: left;
 }
 
-th{
+th {
     font-weight: 700;
     font-size: 20px;
 }
 
-td{
+td {
     border-bottom: 1px solid black;
     padding: 10px 30px;
 }
 
-#main td{
+#main td {
     font-weight: 700;
+}
+
+@media(max-width: 580px) {
+    .main {
+        width: 100%;
+    }
+
+    .info-extra {
+        display: none;
+    }
 }
