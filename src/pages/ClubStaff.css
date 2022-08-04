@@ -1,11 +1,11 @@
 .clubStaff{
-    width: 100vw;
+    width: 99vw;
 }
-.clubStaff__men{
+.clubStaff__div{
     width: 90%;
     margin: 0 auto;
 }
-.men__title{
+.div__title{
     width: 100%;
     text-transform: uppercase;
     position: relative;
@@ -19,7 +19,7 @@
     background: rgb(163,154,1);
     background: linear-gradient(90deg, rgba(163,154,1,1) 51%, rgba(163,154,1,0) 100%);
 }
-.men__grid{
+.div__grid{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -27,9 +27,8 @@
     padding: 20px 0;
     gap: 20px;
 }
-.men__grid__card{
+.div__grid__card{
     width: 95%;
-    height: 300px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px #0003;
