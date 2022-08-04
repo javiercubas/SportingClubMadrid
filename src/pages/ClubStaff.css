@@ -37,7 +37,7 @@
 }
 .card__person{
     height: 100%;
-    width: 30%;
+    width: 35%;
     box-sizing: border-box;
     padding: 5px;
     display: flex;
@@ -48,7 +48,7 @@
 }
 .card__info{
     height: 100%;
-    width: 70%;
+    width: 65%;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 100%);
     box-sizing: border-box;
@@ -59,7 +59,7 @@
 }
 .card__info2{
     height: 100%;
-    width: 70%;
+    width: 65%;
     background: rgb(255,255,255);
     background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgb(244, 244, 244) 100%);
     box-sizing: border-box;
@@ -90,4 +90,21 @@
     border-width: 3px;
     border-color: black;
     background-color: gray;
+}
+.person__task{
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .person__photo{
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .person__photo{
+        width: 85%;
+        padding-bottom: 85%;
+    }
 }

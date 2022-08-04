@@ -27,7 +27,7 @@ export default function ClubStaff(){
                     </div>
                     <div class="div__grid__card">
                         
-                        <div class="card__info2" dir="RTL">
+                        <div class="card__info2" >
                             <ul class="info__list">
                                 <li>UEFA 'Pro' License</li>
                                 <li>Head Coach of CDC Moscardo 'B' in Segunda Regional senior division</li>
@@ -80,7 +80,7 @@ export default function ClubStaff(){
                     </div>
                     <div class="div__grid__card">
                         
-                        <div class="card__info2" dir="RTL">
+                        <div class="card__info2" >
                             <ul class="info__list">
                                 <li>UEFA 'A' License, PhD Women's Football development</li>
                                 <li>Coaching experience at Madrid CFF & Union Zona Norte</li>
@@ -132,7 +132,7 @@ export default function ClubStaff(){
                     </div>
                     <div class="div__grid__card">
                         
-                        <div class="card__info2" dir="RTL">
+                        <div class="card__info2" >
                             <ul class="info__list">
                                 <li>B.S Exercise Science and Physical Therapy at Universidad Europea de Madrid</li>
                                 <li>Expertise in Manual Therapies and Dry Needling</li>
