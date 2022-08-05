@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Mission from './components/Mission/Mission';
 import UniversityPage from './components/Universities/UniversityPage/universityPage';
-
+import Blog from './pages/Blog';
 import Women from './pages/Women';
 import Contact from './components/Contact/Contact'
 import ClubStaff from './pages/ClubStaff';
@@ -43,7 +43,7 @@ export default function App() {
         <Route path="/women" exact element={<Women />} />
         <Route path="/men" exact element={<Men />} />
         <Route path="/universities" exact element={<UniversityPage />} />
-        <Route path="/blog" exact element={<Home />} />
+        <Route path="/blog" exact element={<Blog />} />
       </Routes>
       <ScrollToTop/>
       <Footer/>
