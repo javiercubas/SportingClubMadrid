@@ -1,0 +1,29 @@
+.clubStaff{
+    width: 99vw;
+}
+.clubStaff__div{
+    width: 90%;
+    margin: 0 auto;
+}
+.div__title{
+    width: 100%;
+    text-transform: uppercase;
+    position: relative;
+    color: #a39a01;
+    margin-top: 5%;
+}
+.clubStaff__hr{
+    width: 100%;
+    height:4px;
+    margin-left: 0;
+    background: rgb(163,154,1);
+    background: linear-gradient(90deg, rgba(163,154,1,1) 51%, rgba(163,154,1,0) 100%);
+}
+.div__grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 20px 0;
+    gap: 20px;
+}
