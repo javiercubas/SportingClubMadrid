@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Mission from './components/Mission/Mission';
 import UniversityPage from './components/Universities/UniversityPage/universityPage';
+import OurProgramPage from './components/OurProgram/ourProgram';
 
 import Women from './pages/Women';
 import Contact from './components/Contact/Contact'
@@ -38,7 +39,7 @@ export default function App() {
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/dashboard" exact element={<Home />} />
         <Route path="/mission" exact element={<Mission />} />
-        <Route path="/our-program" exact element={<Home />} />
+        <Route path="/our-program" exact element={<OurProgramPage />} />
         <Route path="/club-staff" exact element={<ClubStaff />} />
         <Route path="/women" exact element={<Women />} />
         <Route path="/men" exact element={<Men />} />
