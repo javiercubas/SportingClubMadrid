@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -10,7 +10,19 @@ export default function Sidebar() {
     const Sidebar = () => {
         isOpen === true ? setIsopen(false) : setIsopen(true);
     }
-    const[t] = useTranslation("global");
+    const [t] = useTranslation("global");
+
+    const url = 'http://127.0.0.1:1337/api/menu-elements'
+    const [todos, setTodos] = useState()
+    const fetchApi = async () => {
+        const response = await fetch(url)
+        const responseJSON = await response.json()
+        setTodos(responseJSON.data)
+    }
+
+    useEffect(() => {
+        fetchApi()
+    }, [])
     return (
         <>
             <div className="btn btn-primary" onClick={Sidebar} >
@@ -23,14 +35,12 @@ export default function Sidebar() {
                 </div>
                 <div className="sd-body">
                     <ul>
-                        <li><Link to='/' exact onClick={Sidebar}>{t("main-menu.home")}</Link></li>
-                        <li><Link to='/teams' exact onClick={Sidebar}>{t("main-menu.teams")}</Link></li>
-                        <li><Link to='/national-teams' exact onClick={Sidebar}>{t("main-menu.national-teams")}</Link></li>
-                        <li><Link to='/leagues' exact onClick={Sidebar}>{t("main-menu.leagues")}</Link></li>
-                        <li><Link to='/tournaments' exact onClick={Sidebar}>{t("main-menu.tournaments")}</Link></li>
-                        <li><Link to='/blitz-tournaments' exact onClick={Sidebar}>{t("main-menu.blitz-tournaments")}</Link></li>
-                        <li><Link to='/friendly-matches' exact onClick={Sidebar}>{t("main-menu.friendly-matches")}</Link></li>
-                        <li><Link to='/contact' exact onClick={Sidebar}>{t("main-menu.contact")}</Link></li>
+                        {!todos ? 'Cargando...' :
+                            todos.map((element, index) => {
+                                return (
+                                    <li><Link to={element.attributes.Name.toLowerCase().replace(" ", "-")} onClick={Sidebar}>{element.attributes.Name}</Link></li>
+                                )
+                            })}
                     </ul>
                 </div>
             </div>

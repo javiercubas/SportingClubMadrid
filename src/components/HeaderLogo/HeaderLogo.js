@@ -12,14 +12,14 @@ import Sidebar from "../TopBar/Sidebar";
 export function Languages(props) {
   const { country, language } = props;
   return (
-      <button className="country-grid-flags" onClick={() => {
-          const function1 = i18next.changeLanguage(country)
-          const function2 = document.getElementsByClassName('overlay')[0].style.visibility = "hidden"
-          const function3 = document.getElementsByClassName('overlay')[0].style.opacity = "0"
-      }}>
-          <img className="img-country-grid-flags" src={`/assets/${language}.png`} />
-          <p className="name-country-grid-flags">{language}</p>
-      </button>
+    <button className="country-grid-flags" onClick={() => {
+      const function1 = i18next.changeLanguage(country)
+      const function2 = document.getElementsByClassName('overlay')[0].style.visibility = "hidden"
+      const function3 = document.getElementsByClassName('overlay')[0].style.opacity = "0"
+    }}>
+      <img className="img-country-grid-flags" src={`/assets/${language}.png`} />
+      <p className="name-country-grid-flags">{language}</p>
+    </button>
   )
 }
 
@@ -45,7 +45,7 @@ const HeaderLogo = () => {
     if (!user) return;
     fetchUserName();
   }, [user, loading]);
-  
+
   const [visibility, setVisibility] = useState(false);
 
   const popupCloseHandler = (e) => {
@@ -72,6 +72,19 @@ const HeaderLogo = () => {
 
   }
   const [t] = useTranslation("global");
+
+  const url = 'http://127.0.0.1:1337/api/menu-elements'
+  const [todos, setTodos] = useState()
+  const fetchApi = async () => {
+    const response = await fetch(url)
+    const responseJSON = await response.json()
+    setTodos(responseJSON.data)
+  }
+
+  useEffect(() => {
+    fetchApi()
+  }, [])
+
   return (
     <>
       <Popup
@@ -110,20 +123,17 @@ const HeaderLogo = () => {
         <div className="menu-header">
           <nav className="main-menu">
             <ul className="content-menu-header">
-              <Link to="/" className="elements-menu-header">Home</Link>
-              <Link to="/mission" className="elements-menu-header">Mission</Link>
-              <Link to="/our-program" className="elements-menu-header">Our Program</Link>
-              <Link to="/club-staff" className="elements-menu-header">Club Staff</Link>
-              <Link to="/women" className="elements-menu-header">Women</Link>
-              <Link to="/men" className="elements-menu-header">Men</Link>
-              <Link to="/universities" className="elements-menu-header">Universities</Link>
-              <Link to="/contact" className="elements-menu-header">Contact</Link>
-              <Link to="/blog" className="elements-menu-header">Blog</Link>
+              {!todos ? 'Cargando...' :
+                todos.map((element, index) => {
+                  return (
+                    <Link to={element.attributes.Name.toLowerCase().replace(" ", "-")} className="elements-menu-header">{element.attributes.Name}</Link>
+                  )
+                })}
             </ul>
           </nav>
           <i className="fas fa-search"></i>
         </div>
-        <Sidebar/>
+        <Sidebar />
       </div>
     </>
   )
