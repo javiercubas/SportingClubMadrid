@@ -8,7 +8,6 @@ function Blog() {
         const response = await fetch(url)
         const responseJSON = await response.json()
         setTodos(responseJSON.data)
-        console.log(responseJSON.data)
     }
 
     useEffect(() => {
