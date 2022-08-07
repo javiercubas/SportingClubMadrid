@@ -1,4 +1,3 @@
-import { PropaneSharp } from "@mui/icons-material";
 import React, { Fragment } from "react";
 import './BlogPost.css';
 
@@ -6,7 +5,7 @@ function BlogPost(props){
     return(
         <Fragment>
             <div class="blogPost">
-                <div class="blogPost__picture">
+                <div class="blogPost__picture" style={{backgroundImage: 'url(http://localhost:1337'+props.image+')'}}>
 
                 </div>
                 <div class="blogPost__text">

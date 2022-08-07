@@ -1,19 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Blog.css';
 import BlogPost from "../components/BlogPost/BlogPost";
-function Blog(){
+function Blog() {
+    const url = 'http://127.0.0.1:1337/api/posts?populate=%2A'
+    const [todos, setTodos] = useState()
+    const fetchApi = async () => {
+        const response = await fetch(url)
+        const responseJSON = await response.json()
+        setTodos(responseJSON.data)
+        console.log(responseJSON.data)
+    }
+
+    useEffect(() => {
+        fetchApi()
+    }, [])
     return (
         <div class="blog">
             <div class="blog__header">
                 <h2 className='div__title'>Featured Posts</h2>
-                <hr class="clubStaff__hr"/>
+                <hr class="clubStaff__hr" />
             </div>
-            
+
             <div class="blog__grid">
-                <BlogPost  title="Titulo1" author="Mario Gutiérrez" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus ex id nisi vestibulum elementum. Integer interdum dictum mattis. Phasellus erat metus, ultricies et tellus vitae, malesuada convallis ante. Nam congue, sem non tempus aliquam, nunc justo lacinia lectus, at dictum dolor enim posuere eros. Vestibulum sit amet euismod magna."views={3} likes={321}/>
-                <BlogPost title="Titulo2" author="Mario Gutiérrez" views={4} likes={21}/>
-                <BlogPost title="Titulo3" author="Mario Gutiérrez" views={12} likes={32}/>
-                <BlogPost title="Titulo4" author="Mario Gutiérrez" views={212} likes={242}/>
+                {!todos ? 'Cargando...' :
+                    todos.map((post, index) => {
+                        return <BlogPost title={post.attributes.Title} author="Mario Gutiérrez" image={post.attributes.Featured_Image.data.attributes.url} content={post.attributes.Content.slice(0, 300)+'...'} views={post.attributes.categories.data[0].attributes.Name} likes={321} />
+                    })}
             </div>
         </div>
     );
