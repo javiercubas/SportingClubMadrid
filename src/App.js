@@ -13,14 +13,14 @@ import OurProgramPage from './components/OurProgram/ourProgram';
 import Women from './pages/Women';
 import Contact from './components/Contact/Contact'
 import ClubStaff from './pages/ClubStaff';
-
+import Pag404 from './components/Pag404/Pag404'
 
 export default function App() {
   return (
     <>
       <HeaderLogo/>
       <Routes>
-        <Route path="*" exact element={<p>prueba</p>}/>
+        <Route path="*" exact element={<Pag404/>}/>
         <Route path="/" exact element={<Home />} />
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/dashboard" exact element={<Home />} />
