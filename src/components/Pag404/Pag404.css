@@ -6,6 +6,8 @@
     justify-content: initial;
     align-content: center;
     gap: 40px;
+    background-image: url('./../Mission/assets/fondo_mission.jpg');
+    background-size: cover;
 }
 .pag404__title{
     text-align: center;
@@ -47,4 +49,5 @@
     align-content: center;
     flex-direction: column;
     gap: 40px;
+    
 }
