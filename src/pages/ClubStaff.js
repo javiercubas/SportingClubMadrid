@@ -1,7 +1,7 @@
 import './ClubStaff.css';
 import { useEffect, useState } from 'react';
-import StaffCard1 from '../components/StaffCard/StaffCard1';
-import StaffCard2 from '../components/StaffCard/StaffCard2';
+import StaffCard from '../components/StaffCard/StaffCard';
+
 export default function ClubStaff() {
     const url = 'http://127.0.0.1:1337/api/type-staffs?populate[staff][populate][0]=position_staff'
     const [todos, setTodos] = useState()
@@ -35,11 +35,12 @@ export default function ClubStaff() {
                             }
                         }
                         let type
-                        if(index % 2 == 0) type=2;
-                        else type=1;
+                        if(index % 2 == 0) type=1;
+                        else type=2;
                         return (
-                            <StaffCard1
+                            <StaffCard
                                 name={staff.attributes.Name}
+                                id={staff.id}
                                 task={staff.attributes.position_staff.data.attributes.Position}
                                 type={type}
                                 lista={array.map((list, index) => {

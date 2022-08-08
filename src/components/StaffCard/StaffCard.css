@@ -60,6 +60,8 @@
     border-width: 3px;
     border-color: black;
     background-color: gray;
+    background-position: center;
+    background-size: cover;
 }
 .person__task{
     text-align: center;
