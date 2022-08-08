@@ -186,10 +186,10 @@
     transition: fill 0.2s;
   }
   
-  .footer-social-link.twitter {
+  .footer-social-link.instagram {
     height: 28px;
-    left: 62px;
-    top: 3px;
+    left: 61px;
+    top: 1px;
     width: 28px;
   }
   
@@ -200,11 +200,11 @@
     width: 24px;
   }
   
-  .footer-social-link.github {
+  .footer-social-link.twitter {
     height: 34px;
-    left: 172px;
-    top: 7px;
-    width: 34px;
+    left: 175px;
+    top: 11px;
+    width: 29px;
   }
   
   .footer-copyright {

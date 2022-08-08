@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth, db } from "../../Firebase";
-import { query, collection, getDocs, where, connectFirestoreEmulator } from "firebase/firestore";
 import Popup from "../Popup/Popup";
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
@@ -24,30 +21,7 @@ export function Languages(props) {
 }
 
 const HeaderLogo = () => {
-  const [user, loading, error] = useAuthState(auth);
-  const [name, setName] = useState("");
-
-  const fetchUserName = async () => {
-    try {
-      const q = query(collection(db, "users"), where("uid", "==", user?.uid));
-      const doc = await getDocs(q);
-      const data = doc.docs[0].data();
-
-      setName(data.psn);
-    } catch (err) {
-      console.error(err);
-      alert("An error occured while fetching user data");
-    }
-  };
-
-  useEffect(() => {
-    if (loading) return;
-    if (!user) return;
-    fetchUserName();
-  }, [user, loading]);
-
   const [visibility, setVisibility] = useState(false);
-
   const popupCloseHandler = (e) => {
     setVisibility(e);
   };
@@ -109,15 +83,15 @@ const HeaderLogo = () => {
             <h1 className='title-header'>SPORTING CLUB MADRID</h1>
           </Link>
           <div className='social-media-header'>
-            <Link to="#" className='social-media'>
+            <a href="https://www.instagram.com/sportingclubmadrid/" className='social-media'>
               <i style={{ fontSize: "xx-large", color: "#a09600" }} className="fa-brands fa-instagram"></i>
-            </Link>
-            <Link to="#" className='social-media'>
+            </a>
+            <a href="https://mobile.twitter.com/scmadrid2021" className='social-media'>
               <i style={{ fontSize: "xx-large", color: "#a09600" }} className="fa-brands fa-twitter"></i>
-            </Link>
-            <Link to="#" className='social-media'>
+            </a>
+            <a href="https://es.linkedin.com/company/sporting-club-madrid" className='social-media'>
               <i style={{ fontSize: "xx-large", color: "#a09600" }} className="fa-brands fa-linkedin"></i>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="menu-header">
@@ -125,8 +99,12 @@ const HeaderLogo = () => {
             <ul className="content-menu-header">
               {!todos ? 'Cargando...' :
                 todos.map((element, index) => {
+                  let url = element.attributes.Name.toLowerCase().replace(" ", "-")
+                  if (url == "home") {
+                    url = ""
+                  }
                   return (
-                    <Link to={element.attributes.Name.toLowerCase().replace(" ", "-")} className="elements-menu-header">{element.attributes.Name}</Link>
+                    <Link to={url} className="elements-menu-header">{element.attributes.Name}</Link>
                   )
                 })}
             </ul>
