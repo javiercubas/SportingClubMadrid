@@ -15,6 +15,8 @@ import Contact from './components/Contact/Contact'
 import ClubStaff from './pages/ClubStaff';
 import Pag404 from './components/Pag404/Pag404'
 import PlayerPersonal from './components/PlayerPersonalPage/playerPersonal';
+import FullBlogPost from './components/FullBlogPost/FullBlogPost';
+
 
 export default function App() {
   return (
@@ -32,6 +34,7 @@ export default function App() {
         <Route path="/men" exact element={<Men />} />
         <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Blog />} />
+        <Route path="/prueba" exact element={<FullBlogPost/>}/>
       </Routes>
       <ScrollToTop/>
       <Footer/>

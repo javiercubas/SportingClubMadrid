@@ -1,0 +1,112 @@
+.fullBlogPost{
+    width: 100vw;
+    background-color: white;
+    background-image: url('./../Mission/assets/fondo_mission.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.fullBlogPost__card{
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #0003;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+}
+
+.fullBlogPost__card__title{
+    text-align: left;
+    color: #a09600;
+    font-size: 50px;
+    font-family: Teko, 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.fullBlogPost__card__hr{
+    width: 90%;
+    height:2px;
+    margin-left: 0;
+    margin-top: 0;
+    background: rgb(163,154,1);
+    background: linear-gradient(90deg, rgba(163,154,1,1) 51%, rgba(163,154,1,0) 100%);
+}
+
+
+.fullBlogPost__card__info{
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fullBlogPost__tags{
+    display: flex;
+    justify-content: center;
+    align-content: center;;
+    gap: 10px;
+}
+.fullBlogPost__card__info__tag{
+    border-radius: 20px;
+    padding: 2px 10px;
+    font-family: Teko, 'Courier New', Courier, monospace;
+    border: solid 2px rgb(176, 176, 176);
+    color: rgb(176, 176, 176);
+    display: inline-block;
+    cursor: pointer;
+}
+.fullBlogPost__card__info__tag:hover{
+    border: solid 2px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.fullBlogPost__card__info__date{
+    font-family: Teko, 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.fullBlogPost__card__content__img{
+    width: 30%;
+    height: 100%;
+}
+.fullBlogPost__card__content__img__src{
+    height: 80%;
+    background-color: black;
+}
+.fullBlogPost__card__content{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.fullBlogPost__card__content p{
+    margin: 15px 0;
+    text-align: justify;
+    font-family: Poppins, 'Courier New', Courier, monospace;
+}
+
+.fullPostBlog__card__img{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.fullPostBlog__card__img__src{
+    width: 40%;
+    border-radius: 5px;
+    object-fit: contain;
+}
