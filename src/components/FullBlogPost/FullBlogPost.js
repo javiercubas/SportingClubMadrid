@@ -16,14 +16,14 @@ function FullBlogPost(props) {
                 
                 <h3 class="fullBlogPost__card__info__date">09/09/2022</h3>
             </div>
-            <div className='fullPostBlog__card__img'>
-                <img src="https://pbs.twimg.com/media/FPb0dHrWQAM4RDd?format=jpg&name=4096x4096" alt="" className='fullPostBlog__card__img__src'/>
-                <div className='fullPostBlog__card__img__text'>
-                    <p class="fullPostBlog__card__img__text__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, exercitationem!</p>
-                </div>
-            </div>
-            <hr className='fullBlogPost__card__hr2'/>
             <div class="fullBlogPost__card__content">
+                <div className='fullPostBlog__card__img'>
+                    <img src="https://pbs.twimg.com/media/FPb0dHrWQAM4RDd?format=jpg&name=4096x4096" alt="" className='fullPostBlog__card__img__src'/>
+                    <div className='fullPostBlog__card__img__text'>
+                        <p class="fullPostBlog__card__img__text__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, exercitationem!</p>
+                    </div>
+                </div>
+                
                 <p>Posdata: Dale Alt + Z para que todo el texto se pase a la siguiente linea <br/>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iure odit laboriosam, et esse magni ut libero, sed suscipit, sunt ex sequi in. Doloremque minima maiores eos quidem rerum quisquam saepe reiciendis, fugit laudantium quod perspiciatis suscipit assumenda ut architecto voluptate enim in vitae illo reprehenderit non tenetur? Totam, cupiditate.
                 </p><p>
