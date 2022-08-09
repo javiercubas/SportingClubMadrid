@@ -14,7 +14,9 @@ import Women from './pages/Women';
 import Contact from './components/Contact/Contact'
 import ClubStaff from './pages/ClubStaff';
 import Pag404 from './components/Pag404/Pag404'
+import PlayerPersonal from './components/PlayerPersonalPage/playerPersonal';
 import FullBlogPost from './components/FullBlogPost/FullBlogPost';
+
 
 export default function App() {
   return (
