@@ -18,7 +18,7 @@
     box-shadow: 0px 0px 20px 0px #0003;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 15px 20px;
+    padding: 15px 20px 40px 20px;
     letter-spacing: 1px;
 }
 
@@ -99,14 +99,34 @@
 }
 
 .fullPostBlog__card__img{
+    width: unset;
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.fullPostBlog__card__img__text{
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 19vw;
+}
+.fullBlogPost__card__hr2{
+    width: 90%;
+    margin: 0 auto;
+    background: rgb(163,154,1);
+    background: linear-gradient(90deg, rgba(163,154,1,0) 0%, rgba(163,154,1,1) 50%, rgba(163,154,1,0) 100%);
+    height: 3px;
+}
+.fullPostBlog__card__img__text__p{
+
 }
 
-
 .fullPostBlog__card__img__src{
-    width: 40%;
+    width: 60%;
+    height: 500px;
     border-radius: 5px;
-    object-fit: contain;
+    object-fit: cover;
+    margin: 0 auto;
 }
