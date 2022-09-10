@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CardPlayer from '../cardPlayer/cardPlayer'
+import CardPlayer from '../cardPlayer/CardPlayer'
 import './Roster.css'
 
 export default function Roster(props) {
@@ -40,39 +40,47 @@ export default function Roster(props) {
     element.className = arr1.join(" ");
   }
 
-  const url = 'http://127.0.0.1:1337/api/teams/'+id+'/?&populate[players][populate][0]=positions'
+  const url = 'http://127.0.0.1:1337/api/teams/' + id + '/?&populate[players][populate][0]=positions'
   const [todos, setTodos] = useState()
   const fetchApi = async () => {
     const response = await fetch(url)
     const responseJSON = await response.json()
     setTodos(responseJSON.data.attributes)
   }
-  
+
   useEffect(() => {
     fetchApi()
-    filterSelection('Goalkeeper', 0)
   }, [])
   return (
-    <div className="box-roster" >
-      <h2 className="title-roster">Jugadores</h2>
-      <hr className='hr-roster'/>
+    <div className="box-roster" onLoad={() => filterSelection('Goalkeeper', 0)} >
+      <h2 className="title-roster">Players</h2>
+      <hr className='hr-roster' />
       <nav className="menu-roster">
         <ul className="list-roster">
-          <li className="position-roster" onClick={() => filterSelection('Goalkeeper', 0)}>Porteros</li>
-          <li className="position-roster" onClick={() => filterSelection('Defense', 1)}>Defensas</li>
-          <li className="position-roster" onClick={() => filterSelection('Midfielder', 2)}>Mediocentros</li>
-          <li className="position-roster" onClick={() => filterSelection('Fordward', 3)}>Delanteros</li>
+          <li className="position-roster" onClick={() => filterSelection('Goalkeeper', 0)}>GoalKeepers</li>
+          <li className="position-roster" onClick={() => filterSelection('Defense', 1)}>Defenses</li>
+          <li className="position-roster" onClick={() => filterSelection('Midfielder', 2)}>Midfielders</li>
+          <li className="position-roster" onClick={() => filterSelection('Fordward', 3)}>Fordwards</li>
         </ul>
       </nav>
       <div className="players-swiper">
         <ul className="players-list">
-        { !todos ? 'Cargando...' :
-        todos.players.data.map( (player, index)=>{
-           const position = player.attributes.positions.data.map( position => {
-             return position.attributes.Type;
-           })
-          return <CardPlayer key={index} nombre = {player.attributes.Name} apellido = {player.attributes.Surname} posicion={position} dorsal = {player.attributes.Dorsal} />
-        } )}
+          {!todos ? 'Cargando...' :
+            todos.players.data.map((player, index) => {
+              const position = player.attributes.positions.data.map(position => {
+                return position.attributes.Type;
+              })
+              return (
+                <CardPlayer
+                  key={index}
+                  nombre={player.attributes.Name}
+                  apellido={player.attributes.Surname}
+                  posicion={position}
+                  dorsal={player.attributes.Dorsal}
+                  id={player.id}
+                />
+              )
+            })}
         </ul>
       </div>
     </div>

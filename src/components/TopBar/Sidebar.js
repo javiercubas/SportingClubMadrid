@@ -37,8 +37,12 @@ export default function Sidebar() {
                     <ul>
                         {!todos ? 'Cargando...' :
                             todos.map((element, index) => {
+                                let url = element.attributes.Name.toLowerCase().replace(" ", "-")
+                                if (url == "home") {
+                                    url = ""
+                                }
                                 return (
-                                    <li><Link to={element.attributes.Name.toLowerCase().replace(" ", "-")} onClick={Sidebar}>{element.attributes.Name}</Link></li>
+                                    <li><Link to={url} onClick={Sidebar}>{element.attributes.Name}</Link></li>
                                 )
                             })}
                     </ul>

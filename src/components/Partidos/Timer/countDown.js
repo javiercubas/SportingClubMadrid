@@ -1,8 +1,10 @@
 import './countDown.css';
 
-export default function CountDown() {
+export default function CountDown(props) {
+    const { date, id } = props;
+
     function countDown(i) {
-        const countDate = new Date("2022/08/22 21:00:00").getTime();
+        const countDate = new Date(date).getTime();
         const now = new Date().getTime();
 
         const remainingTime = countDate - now;
@@ -17,12 +19,11 @@ export default function CountDown() {
         const textMinute = Math.floor((remainingTime % hour) / minute);
         const textSeconds = Math.floor((remainingTime % minute) / second);
 
-        for (let i = 0; i < document.getElementsByClassName("dayMatch").length; i++) {
-            document.getElementsByClassName("dayMatch")[i].innerText = textDay;
-            document.getElementsByClassName("hour")[i].innerText = textHour;
-            document.getElementsByClassName("minute")[i].innerText = textMinute;
-            document.getElementsByClassName("second")[i].innerText = textSeconds;
-        }
+        
+            document.getElementsByClassName("dayMatch")[id].innerText = textDay;
+            document.getElementsByClassName("hour")[id].innerText = textHour;
+            document.getElementsByClassName("minute")[id].innerText = textMinute;
+            document.getElementsByClassName("second")[id].innerText = textSeconds;
     }
 
     setInterval(countDown, 500)

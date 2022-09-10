@@ -1,17 +1,35 @@
 import './playerPersonal.css'
+import { useEffect, useState } from 'react'
 
-export default function PlayerPersonal() {
+export default function PlayerPersonal(props) {
+    const url = 'http://127.0.0.1:1337/api/players/'+props.id+'?populate=%2A'
+    const [todos, setTodos] = useState()
+    const fetchApi = async () => {
+        const response = await fetch(url)
+        const responseJSON = await response.json()
+        setTodos(responseJSON.data.attributes)
+    }
 
+    useEffect(() => {
+        fetchApi()
+    }, [])
+    let image=''
+    if (todos){
+        if (todos.Photo.data!=null){
+            image='url(http://127.0.0.1:1337'+todos.Photo.data.attributes.url+')'
+        }
+    }
+    
     return (
         <>
             <div className="player_personal_content">
                 <div className="player_img">
                     <div className="small_info_player">
-                        <h3 className='info_text posi'>PORTERO</h3>
-                        <h1 className='info_text name'>Paco</h1>
-                        <h2 className='info_text number'>2</h2>
+                        <h3 className='info_text posi'>{!todos ? 'Cargando...' : todos.positions.data[0].attributes.Type}</h3>
+                        <h1 className='info_text name'>{!todos ? 'Cargando...' : todos.Name+" "+todos.Surname}</h1>
+                        <h2 className='info_text number'>{!todos ? 'Cargando...' : todos.Dorsal}</h2>
                     </div>
-                    <div className="img_player"></div>
+                    <div className="img_player" style={{backgroundImage: image}}></div>
                 </div>
                 <div className="player_info">
                     <div className='content_title_box'>
@@ -23,28 +41,28 @@ export default function PlayerPersonal() {
                         </div>
                         <div className="data_person">
                             <div className="content_data_person">
-                                <h1 className='content_text_main'>Nombre</h1>
-                                <h2 className='content_text_not_main'>Paco Fernandez Zidane</h2>
+                                <h3 className='content_text_main'>Nombre</h3>
+                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.Name+" "+todos.Surname}</p>
                             </div>
                             <div className="content_data_person">
-                                <h1 className='content_text_main'>Lugar de nacimiento</h1>
-                                <h2 className='content_text_not_main'>Madrid</h2>
+                                <h3 className='content_text_main'>Lugar de nacimiento</h3>
+                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.BirthdayPlace}</p>
                             </div>
                             <div className="content_data_person">
-                                <h1 className='content_text_main'>Fecha de nacimiento</h1>
-                                <h2 className='content_text_not_main'>12/12/2003</h2>
+                                <h3 className='content_text_main'>Fecha de nacimiento</h3>
+                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.Birthday}</p>
                             </div>
                             <div className="content_data_person">
-                                <h1 className='content_text_main'>Posicion</h1>
-                                <h2 className='content_text_not_main'>Portero</h2>
+                                <h3 className='content_text_main'>Posicion</h3>
+                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.positions.data.map((position, index) => { if (index != todos.positions.data.length-1) {return position.attributes.Type+", "} else{return position.attributes.Type} })}</p>
                             </div>
                             <div className="content_data_person">
-                                <h1 className='content_text_main'>Peso</h1>
-                                <h2 className='content_text_not_main'>50 kg</h2>
+                                <h3 className='content_text_main'>Peso</h3>
+                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.Weight} kg</p>
                             </div>
                             <div className="content_data_person">
-                                <h1 className='content_text_main'>Altura</h1>
-                                <h2 className='content_text_not_main'>2,00 m</h2>
+                                <h3 className='content_text_main'>Altura</h3>
+                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.Height} m</p>
                             </div>
                         </div>
                     </div>

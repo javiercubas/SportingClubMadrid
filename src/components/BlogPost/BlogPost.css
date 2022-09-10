@@ -1,5 +1,5 @@
 .blogPost{
-    width: 700px;
+    width: 49%;
     height: 300px;
     background-color: white;
     border-radius: 5px;
@@ -7,6 +7,7 @@
     border-style: solid;
     border-color: rgb(145, 145, 145);
     display: flex;
+    color: black;
 }
 .blogPost__picture{
     width: 30%;
@@ -58,4 +59,29 @@
 .blogPost__info__author__img{
     height: 100%;
     border-radius: 50%;
+}
+
+@media (orientation:portrait){
+    .blogPost{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    
+    .blogPost__picture{
+        width: 100%;
+        height: 500px;
+    }
+
+    .blogPost__text{
+        width: 100%;
+    }
+
+    .blogPost__content__p{
+        display: none;
+    }
+
+    .blogPost__info{
+        align-items: center;
+    }
 }

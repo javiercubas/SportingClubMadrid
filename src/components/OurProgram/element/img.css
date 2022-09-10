@@ -5,3 +5,9 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (orientation:portrait) {
+    .op_img{
+        height: 65vh;
+    }
+}

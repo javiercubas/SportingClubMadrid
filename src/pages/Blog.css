@@ -1,5 +1,5 @@
 .blog{
-    width: 99vw;
+    width: 100%;
 }
 .blog__header{
     width: 97%;
@@ -16,4 +16,11 @@
     gap: 15px;
     justify-content: center;
     align-items: flex-start;
+}
+
+@media (orientation:portrait){
+    .blog__grid{
+        margin: 15px auto 0;
+        gap: 50px;
+    }
 }

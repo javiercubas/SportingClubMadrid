@@ -9,7 +9,7 @@
 .title-roster{
     text-transform: uppercase;
     font-family: Teko;
-    font-size: 60px;
+    font-size: 50px;
     color: #a09600;
 }
 
@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 
-.active{
+.position-roster.active{
     background-color: #444;
     color: white;
 }

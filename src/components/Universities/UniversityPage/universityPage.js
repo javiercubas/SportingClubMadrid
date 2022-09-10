@@ -24,12 +24,12 @@ export default function UniversityPage() {
                     todos.map((university_type, index) => {
                         const university = university_type.attributes.universities.data.map(university => {
                             return (
-                                <div className="info_uni_link">
+                                <a className="info_uni_link" href={university.attributes.Web}>
                                     <div className="uni-img">
                                         <img className="img1" src={"http://127.0.0.1:1337" + university.attributes.Logo.data.attributes.url} />
                                     </div>
-                                    <a className='uni_link' href={university.attributes.Web}>{university.attributes.Name}</a>
-                                </div>
+                                    <p className='uni_link'>{university.attributes.Name}</p>
+                                </a>
                             )
                         })
                         return (

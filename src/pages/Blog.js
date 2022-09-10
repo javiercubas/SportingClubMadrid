@@ -23,7 +23,7 @@ function Blog() {
             <div class="blog__grid">
                 {!todos ? 'Cargando...' :
                     todos.map((post, index) => {
-                        return <BlogPost title={post.attributes.Title} author="Mario Gutiérrez" image={post.attributes.Featured_Image.data.attributes.url} content={post.attributes.Content.slice(0, 300)+'...'} views={post.attributes.categories.data[0].attributes.Name} likes={321} />
+                        return <BlogPost title={post.attributes.Title} author="Mario Gutiérrez" image={post.attributes.Featured_Image.data.attributes.url} content={post.attributes.Content.slice(0, 300)+'...'} teams={post.attributes.categories.data[0].attributes.Name} />
                     })}
             </div>
         </div>

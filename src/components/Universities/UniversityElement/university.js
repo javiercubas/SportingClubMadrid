@@ -9,7 +9,7 @@ export default function University() {
                 <h3 className='text-info'>Full Bachelors and Masters degrees available in English in Madrid</h3>
             </div>
             <div className="button-radio">
-                <a className='info' href="">MORE INFO</a>
+                <a className='info' href="/universities">MORE INFO</a>
                 <i className="fa-solid fa-circle-info"></i>
             </div>
             <div className="universities">

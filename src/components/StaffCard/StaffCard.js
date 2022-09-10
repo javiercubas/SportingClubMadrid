@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import './StaffCard.css';
 export default function StaffCard(props) {
-    const url = 'http://127.0.0.1:1337/api/staffs/'+props.id+'?populate=%2A'
+    const url = 'http://127.0.0.1:1337/api/staffs/' + props.id + '?populate=%2A'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)
@@ -17,8 +17,10 @@ export default function StaffCard(props) {
             <div class="div__grid__card">
                 <div class="card__person">
                     <h3 class="person__title">{props.name}</h3>
-                    <div class="person__photo" style={{ backgroundImage: 'url(http://127.0.0.1:1337' + todos + ')' }}></div>
-                    <h3 class="person__task">{props.task}</h3>
+                    <div className="person__right">
+                        <div class="person__photo" style={{ backgroundImage: 'url(http://127.0.0.1:1337' + todos + ')' }}></div>
+                        <h3 class="person__task">{props.task}</h3>
+                    </div>
                 </div>
                 <div class="card__info">
                     <ul class="info__list">
@@ -37,8 +39,10 @@ export default function StaffCard(props) {
                 </div>
                 <div class="card__person">
                     <h3 class="person__title">{props.name}</h3>
-                    <div class="person__photo"></div>
-                    <h3 class="person__task">{props.task}</h3>
+                    <div className="person__right">
+                        <div class="person__photo" style={{ backgroundImage: 'url(http://127.0.0.1:1337' + todos + ')' }}></div>
+                        <h3 class="person__task">{props.task}</h3>
+                    </div>
                 </div>
             </div>
         </Fragment>);

@@ -69,8 +69,6 @@ hr {
     cursor: pointer;
 }
 
-.main__enunciado {}
-
 .main__enunciado--h1 {
     text-transform: uppercase;
     text-align: center;
@@ -85,11 +83,6 @@ table {
     width: 100%;
     margin: 15px auto 35px auto;
     border-collapse: collapse;
-}
-
-.table-row {
-    display: block;
-    width: 100%;
 }
 
 .td--equipo {
@@ -133,9 +126,6 @@ td {
 }
 
 @media(max-width: 580px) {
-    .main {
-        width: 100%;
-    }
 
     .info-extra {
         display: none;
