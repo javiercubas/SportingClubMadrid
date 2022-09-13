@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CardPlayer from '../cardPlayer/CardPlayer';
+import CardPlayer from '../cardPlayer/cardPlayer'
 import './Roster.css'
 
 export default function Roster(props) {
