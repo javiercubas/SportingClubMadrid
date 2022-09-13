@@ -3,7 +3,7 @@ import Img_OP from './element/img'
 import { useEffect, useState } from 'react'
 
 export default function OurProgramPage() {
-    const url = 'http://127.0.0.1:1337/api/our-programs/1?populate=%2A'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/our-programs/1?populate=%2A'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)

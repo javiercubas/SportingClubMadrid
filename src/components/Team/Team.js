@@ -5,7 +5,7 @@ import TablaClasificacion from '../TablaClasificacion/TablaClasificacion'
 
 export default function Team(props) {
     const { id } = props;
-    const url = 'http://127.0.0.1:1337/api/matches?populate=%2A&sort[0]=Fecha&sort[0]=Hora&pagination[page]=0&pagination[pageSize]=2'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/matches?populate=%2A&sort[0]=Fecha&sort[0]=Hora&pagination[page]=0&pagination[pageSize]=2'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)

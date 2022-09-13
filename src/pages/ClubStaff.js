@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import StaffCard from '../components/StaffCard/StaffCard';
 
 export default function ClubStaff() {
-    const url = 'http://127.0.0.1:1337/api/type-staffs?populate[staff][populate][0]=position_staff'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/type-staffs?populate[staff][populate][0]=position_staff'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)

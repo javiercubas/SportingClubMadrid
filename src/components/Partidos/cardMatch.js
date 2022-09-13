@@ -8,14 +8,14 @@ export default function CardMatch(props) {
         equipo1 = equipo;
         equipo2 = equipoVisitante;
         escudo1 = "https://static.wixstatic.com/media/d78913_5b532f30dd3f4c8999ea776d97203a61~mv2.png/v1/fill/w_244,h_317,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot__125_-removebg-preview.png";
-        escudo2 = "http://127.0.0.1:1337"+escudoVisitante;
+        escudo2 = "https://clever-neumann.82-223-205-248.plesk.page"+escudoVisitante;
         fondo = "/assets/fondo1.jpg";
         posicion = "left";
     }
     else {
         equipo1 = equipoVisitante;
         equipo2 = equipo;
-        escudo1 = "http://127.0.0.1:1337"+escudoVisitante;
+        escudo1 = "https://clever-neumann.82-223-205-248.plesk.page"+escudoVisitante;
         escudo2 = "https://static.wixstatic.com/media/d78913_5b532f30dd3f4c8999ea776d97203a61~mv2.png/v1/fill/w_244,h_317,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot__125_-removebg-preview.png";
         fondo = "/assets/fondo2.jpg";
         posicion = "right";

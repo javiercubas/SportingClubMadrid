@@ -20,7 +20,7 @@ import FullBlogPost from './components/FullBlogPost/FullBlogPost';
 
 
 export default function App() {
-  const url = 'http://127.0.0.1:1337/api/players'
+  const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/players'
   const [todos, setTodos] = useState()
   const fetchApi = async () => {
     const response = await fetch(url)
@@ -28,7 +28,7 @@ export default function App() {
     setTodos(responseJSON.data)
   }
 
-  const url2 = 'http://127.0.0.1:1337/api/posts'
+  const url2 = 'https://clever-neumann.82-223-205-248.plesk.page/api/posts'
   const [todos2, setTodos2] = useState()
   const fetchApi2 = async () => {
     const response2 = await fetch(url2)

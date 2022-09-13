@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './FullBlogPost.css'
 
 function FullBlogPost(props) {
-    const url = 'http://127.0.0.1:1337/api/posts/' + props.id + '?populate=%2A'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/posts/' + props.id + '?populate=%2A'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)
@@ -17,7 +17,7 @@ function FullBlogPost(props) {
     let image=''
     if (todos){
         if (todos.Featured_Image.data!=null){
-            image='http://127.0.0.1:1337'+todos.Featured_Image.data.attributes.url
+            image='https://clever-neumann.82-223-205-248.plesk.page'+todos.Featured_Image.data.attributes.url
         }
     }
     return (

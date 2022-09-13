@@ -2,7 +2,7 @@ import './playerPersonal.css'
 import { useEffect, useState } from 'react'
 
 export default function PlayerPersonal(props) {
-    const url = 'http://127.0.0.1:1337/api/players/'+props.id+'?populate=%2A'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/players/'+props.id+'?populate=%2A'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)
@@ -16,7 +16,7 @@ export default function PlayerPersonal(props) {
     let image=''
     if (todos){
         if (todos.Photo.data!=null){
-            image='url(http://127.0.0.1:1337'+todos.Photo.data.attributes.url+')'
+            image='url(https://clever-neumann.82-223-205-248.plesk.page'+todos.Photo.data.attributes.url+')'
         }
     }
     

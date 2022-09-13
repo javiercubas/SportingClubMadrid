@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './Blog.css';
 import BlogPost from "../components/BlogPost/BlogPost";
 function Blog() {
-    const url = 'http://127.0.0.1:1337/api/posts?populate=%2A'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/posts?populate=%2A'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)

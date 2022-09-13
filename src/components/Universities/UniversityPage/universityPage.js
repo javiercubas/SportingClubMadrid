@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './universityPage.css'
 
 export default function UniversityPage() {
-    const url = 'http://127.0.0.1:1337/api/university-types?populate[universities][populate][0]=Logo'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/university-types?populate[universities][populate][0]=Logo'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)
@@ -26,7 +26,7 @@ export default function UniversityPage() {
                             return (
                                 <a className="info_uni_link" href={university.attributes.Web}>
                                     <div className="uni-img">
-                                        <img className="img1" src={"http://127.0.0.1:1337" + university.attributes.Logo.data.attributes.url} />
+                                        <img className="img1" src={"https://clever-neumann.82-223-205-248.plesk.page" + university.attributes.Logo.data.attributes.url} />
                                     </div>
                                     <p className='uni_link'>{university.attributes.Name}</p>
                                 </a>

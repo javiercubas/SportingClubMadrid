@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import './StaffCard.css';
 export default function StaffCard(props) {
-    const url = 'http://127.0.0.1:1337/api/staffs/' + props.id + '?populate=%2A'
+    const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/staffs/' + props.id + '?populate=%2A'
     const [todos, setTodos] = useState()
     const fetchApi = async () => {
         const response = await fetch(url)
@@ -18,7 +18,7 @@ export default function StaffCard(props) {
                 <div class="card__person">
                     <h3 class="person__title">{props.name}</h3>
                     <div className="person__right">
-                        <div class="person__photo" style={{ backgroundImage: 'url(http://127.0.0.1:1337' + todos + ')' }}></div>
+                        <div class="person__photo" style={{ backgroundImage: 'url(https://clever-neumann.82-223-205-248.plesk.page' + todos + ')' }}></div>
                         <h3 class="person__task">{props.task}</h3>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ export default function StaffCard(props) {
                 <div class="card__person">
                     <h3 class="person__title">{props.name}</h3>
                     <div className="person__right">
-                        <div class="person__photo" style={{ backgroundImage: 'url(http://127.0.0.1:1337' + todos + ')' }}></div>
+                        <div class="person__photo" style={{ backgroundImage: 'url(https://clever-neumann.82-223-205-248.plesk.page' + todos + ')' }}></div>
                         <h3 class="person__task">{props.task}</h3>
                     </div>
                 </div>
