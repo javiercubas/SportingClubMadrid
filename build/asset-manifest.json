@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.619446cd.css",
+    "main.js": "/static/js/main.4dd58777.js",
+    "static/media/header.png": "/static/media/header.c0c1522ede99a7286554.png",
+    "static/media/mission1.jpg": "/static/media/mission1.638fb61ae33764b19781.jpg",
+    "static/media/mission2.jpg": "/static/media/mission2.5a96533381c820758a47.jpg",
+    "static/media/mission3.jpg": "/static/media/mission3.81461e1c75a107f1c4f7.jpg",
+    "static/media/foto1.jpg": "/static/media/foto1.cd373def8ae6e75c8e28.jpg",
+    "static/media/fondo_mission.jpg": "/static/media/fondo_mission.cbf1450ad00ee14ef301.jpg",
+    "static/media/d78913__mv2.webp": "/static/media/d78913_51659e1a469a4db2a0979e44aa0a3199_mv2.2f01ba1437a31b6180b1.webp",
+    "static/media/UPM.png": "/static/media/UPM.f1a4e457e5ea67466e33.png",
+    "static/media/foto2.jpg": "/static/media/foto2.4bbb94260e0fb8bc5dd3.jpg",
+    "static/media/UC3.png": "/static/media/UC3.9d791ab0ecc7a7d8b725.png",
+    "static/media/suffolk.png": "/static/media/suffolk.5c053f94d1e63069968f.png",
+    "static/media/UA.png": "/static/media/UA.66f28f1ec06e992f754e.png",
+    "static/media/fondo1.jpg": "/static/media/fondo1.c36f3bafda1f66e41c24.jpg",
+    "static/media/schiller.png": "/static/media/schiller.a486456b9a67d04ca527.png",
+    "static/media/american-flag.jpg": "/static/media/american-flag.6ed906362a3e4358470b.jpg",
+    "static/media/UAM.png": "/static/media/UAM.0011922b9f8430dbd2b3.png",
+    "static/media/error404.png": "/static/media/error404.7967201849bb7ddbca93.png",
+    "static/media/SaintLouis.png": "/static/media/SaintLouis.33982bb7efb78634ae61.png",
+    "static/media/IE.png": "/static/media/IE.ecac0ce4bbb0a991d7fe.png",
+    "static/media/sporting_logo.webp": "/static/media/sporting_logo.475677cdc61934d148d3.webp",
+    "static/media/spanish-flag.webp": "/static/media/spanish-flag.9348c315bcb4b024114e.webp",
+    "index.html": "/index.html",
+    "main.619446cd.css.map": "/static/css/main.619446cd.css.map",
+    "main.4dd58777.js.map": "/static/js/main.4dd58777.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.619446cd.css",
+    "static/js/main.4dd58777.js"
+  ]
+}

@@ -52,7 +52,7 @@ export default function App() {
         <Route path="/our-program" exact element={<OurProgramPage />} />
         <Route path="/club-staff" exact element={<ClubStaff />} />
         <Route path="/women" exact element={<Women />} />
-        <Route path="/men" exact element={<Men />} />
+        <Route path="/men-a" exact element={<Men />} />
         <Route path="/men-b" exact element={<MenB />} />
         <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Blog />} />
