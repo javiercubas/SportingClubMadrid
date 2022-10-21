@@ -6,9 +6,6 @@ export default function Partners() {
             <div className="partner__text">
                 <h3>Our Sponsors <span id="partner__text--yellow">and partners</span></h3>
             </div>
-            <a href="http://madridsoccertour.com/" target="_blank" className="partner">
-                <img className="partner--img" src='./assets/mst.webp' />
-            </a>
             <a href="https://www.rfef.es/" target="_blank" className="partner">
                 <img className="partner--img" src='./assets/rfef.webp' />
             </a>

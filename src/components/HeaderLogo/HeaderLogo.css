@@ -82,7 +82,6 @@
 .content-menu-header {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     align-items: center;
     text-transform: uppercase;
     margin: 0;
@@ -293,7 +292,7 @@
     }
 
     .main-menu {
-        width: 70%;
+        width: 80%;
     }
 
     .elements-menu-header {
@@ -365,7 +364,7 @@
     }
 
     .main-menu {
-        width: 70%;
+        width: 80%;
     }
 
     .elements-menu-header {
