@@ -1,11 +1,11 @@
-.grid-men{
+.grid-men {
     height: 74vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.team-men{
+.team-men {
     height: 100%;
     width: 100%;
     display: flex;
@@ -14,7 +14,7 @@
     position: relative;
 }
 
-.bg-team{
+.bg-team {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -22,11 +22,17 @@
     transition: 1s;
 }
 
-.bg-team:hover{
+.bg-team:hover {
     filter: brightness(0.5);
 }
 
-.name-team{
-    font-size:40px;
+.name-team {
+    font-size: 40px;
     position: absolute;
+}
+
+@media (orientation: portrait) {
+    .grid-men {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
