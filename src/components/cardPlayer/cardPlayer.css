@@ -7,6 +7,7 @@
     background: #f8f8f8;
     background: linear-gradient(to bottom, #f8f8f8 0%, #d9d9d9 100%);
     visibility: hidden;
+    display: none;
 }
 
 .box-player::before{
@@ -29,9 +30,11 @@
 
 .show {
     visibility: visible;
-    width: 17.5rem;
-    height: 100%;
-    margin-right: 15px;
+    display: block;
+    height: 29rem;
+    width: 18rem;
+    margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 .card-link{

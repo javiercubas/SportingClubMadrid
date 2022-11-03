@@ -7,14 +7,14 @@ export default function Contact() {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDevault();
-    console.log(form.current)
-    emailjs.sendForm('service_7je8a0p', 'template_gd5jzg5', form.current, 'qjZ5wK71p7c37otXH')
+    e.preventDefault();
+    emailjs.sendForm(REACT_APP_SERVICE, REACT_APP_TEMPLATE, e.target, REACT_APP_PUBLIC_API)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
+      
   }
 
   return (
@@ -51,8 +51,7 @@ export default function Contact() {
               <option value="5">Undecided</option>
             </select></label>
             <label class="contact__form__form__element"><i class="fa-solid fa-people-group"></i>Previous Club<input type="text" name="prev_club" id="prev_club" className='contact__input' /></label>
-            <div class="contact__form__form__--submit"><button id="submit" class="contact__submit" type="submit" value="Submit">SUBMIT
-            </button></div>
+            <div class="contact__form__form__--submit"><input id="submit" class="contact__submit" type="submit" value="Submit"/></div>
           </form>
         </div>
         <div class="contact__main__image"></div>

@@ -60,7 +60,6 @@
 .players-swiper{
     width: 100%;
     box-sizing: border-box;
-    height: 31.25rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -80,6 +79,7 @@
     height: 100%;
     z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     transition-property: transform;
     box-sizing: content-box;
     justify-content: center;

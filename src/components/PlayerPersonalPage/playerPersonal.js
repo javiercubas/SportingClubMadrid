@@ -62,7 +62,7 @@ export default function PlayerPersonal(props) {
                             </div>
                             <div className="content_data_person">
                                 <h3 className='content_text_main'>Altura</h3>
-                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.Height} m</p>
+                                <p className='content_text_not_main'>{!todos ? 'Cargando...' : todos.Height} cm</p>
                             </div>
                         </div>
                     </div>
