@@ -8,7 +8,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(REACT_APP_SERVICE, REACT_APP_TEMPLATE, e.target, REACT_APP_PUBLIC_API)
+    emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_PUBLIC_API)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
