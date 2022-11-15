@@ -18,10 +18,11 @@ import ClubStaff from './pages/ClubStaff';
 import Pag404 from './components/Pag404/Pag404'
 import PlayerPersonal from './components/PlayerPersonalPage/playerPersonal';
 import FullBlogPost from './components/FullBlogPost/FullBlogPost';
+import Convocatoria from './components/Convocatoria/Convocatoria';
 
 
 export default function App() {
-  const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/players'
+  const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/players?pagination[page]=1&pagination[pageSize]=300'
   const [todos, setTodos] = useState()
   const fetchApi = async () => {
     const response = await fetch(url)
@@ -58,10 +59,12 @@ export default function App() {
         <Route path="/men-b" exact element={<MenB />} />
         <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Blog />} />
+        <Route path="/convocatoria" exact element={<Convocatoria />} />
 
         { !todos ? 'Cargando...' :
         todos.map( (player, index)=>{
-           return <Route path={"/"+player.attributes.Name.toLowerCase()+"-"+player.attributes.Surname.toLowerCase().replaceAll(" ","-")} exact element={<PlayerPersonal id={player.id} />} />
+          console.log(player.id)
+           return <Route path={"/"+player.attributes.Name.toLowerCase()+"-"+player.attributes.Surname.toLowerCase().replaceAll(" ","-").replaceAll("á","a").replaceAll("é","e").replaceAll("í","i").replaceAll("ó","o").replaceAll("ú","u").replaceAll("ñ","n")} exact element={<PlayerPersonal id={player.id} />} />
         } )}
 
         { !todos2 ? 'Cargando...' :

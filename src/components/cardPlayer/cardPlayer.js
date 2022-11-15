@@ -34,7 +34,7 @@ export default function CardPlayer(props) {
     }
     return (
         <li className={"box-player " + position}>
-            <a href={"/" + nombre.toLowerCase() + "-" + apellido.toLowerCase().replaceAll(" ","-")} className='card-link'>
+            <a href={"/" + nombre.toLowerCase().replaceAll(" ","-").replaceAll("á","a").replaceAll("é","e").replaceAll("í","i").replaceAll("ó","o").replaceAll("ú","u").replaceAll("ñ","n") + "-" + apellido.toLowerCase().replaceAll(" ","-").replaceAll("á","a").replaceAll("é","e").replaceAll("í","i").replaceAll("ó","o").replaceAll("ú","u").replaceAll("ñ","n")} className='card-link'>
                 <span className="player-name">{apellido}</span>
                 <span className="player-position">{posicion[0]}</span>
                 <span className="player-number">{dorsal}</span>
