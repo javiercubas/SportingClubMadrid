@@ -63,7 +63,6 @@ export default function App() {
 
         { !todos ? 'Cargando...' :
         todos.map( (player, index)=>{
-          console.log(player.id)
            return <Route path={"/"+player.attributes.Name.toLowerCase()+"-"+player.attributes.Surname.toLowerCase().replaceAll(" ","-").replaceAll("á","a").replaceAll("é","e").replaceAll("í","i").replaceAll("ó","o").replaceAll("ú","u").replaceAll("ñ","n")} exact element={<PlayerPersonal id={player.id} />} />
         } )}
 
