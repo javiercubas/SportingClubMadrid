@@ -43,7 +43,7 @@
 .blogPost__info{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     box-sizing: border-box;
     padding: 5px 3%;
 }

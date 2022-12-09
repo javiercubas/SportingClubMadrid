@@ -68,7 +68,7 @@ export default function App() {
 
         { !todos2 ? 'Cargando...' :
         todos2.map( (post, index)=>{
-           return <Route path={"/"+post.attributes.Title.toLowerCase().replaceAll(" ","-")} exact element={<FullBlogPost id={post.id} />} />
+           return <Route path={"/"+post.attributes.Title.toLowerCase().replaceAll(" ","-").replaceAll(",","")} exact element={<FullBlogPost id={post.id} />} />
         } )}
       </Routes>
       <ScrollToTop />

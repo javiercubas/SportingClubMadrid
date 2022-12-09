@@ -33,7 +33,7 @@ function FullBlogPost(props) {
                     </div>
 
                     <div class="fullBlogPost__card__info__right">
-                        <h3 className="fullBlogPost__card__info__right__author">{!todos ? 'Cargando...' : "By "+todos+" -"}</h3>
+                        <h3 className="fullBlogPost__card__info__right__author">{!todos ? 'Cargando...' : "By Amol Gokhale -"}</h3>
                         <h3 className="fullBlogPost__card__info__right__date">{!todos ? 'Cargando...' : todos.publishedAt.slice(0, 10).replaceAll("-", "/")}</h3>
                     </div>
                 </div>
