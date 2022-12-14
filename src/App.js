@@ -4,8 +4,6 @@ import Home from './pages/Home';
 import React, {useEffect, useState} from "react";
 import HeaderLogo from './components/HeaderLogo/HeaderLogo';
 import Men from './pages/Men';
-import MenA from './pages/MenA';
-import MenB from './pages/MenB';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Mission from './components/Mission/Mission';
@@ -55,8 +53,6 @@ export default function App() {
         <Route path="/club-staff" exact element={<ClubStaff />} />
         <Route path="/women" exact element={<Women />} />
         <Route path="/men" exact element={<Men />} />
-        <Route path="/men-a" exact element={<MenA />} />
-        <Route path="/men-b" exact element={<MenB />} />
         <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Blog />} />
         <Route path="/convocatoria" exact element={<Convocatoria />} />

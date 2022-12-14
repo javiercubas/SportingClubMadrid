@@ -40,7 +40,7 @@ export default function Roster(props) {
     element.className = arr1.join(" ");
   }
 
-  const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/teams/' + id + '/?&populate[players][populate][0]=positions'
+  const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/teams/' + id + '/?&populate[players][populate][0]=positions&sort[1]=Dorsal'
   const [todos, setTodos] = useState()
   const fetchApi = async () => {
     const response = await fetch(url)

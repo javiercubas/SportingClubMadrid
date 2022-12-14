@@ -33,7 +33,7 @@ export default function Home() {
             let f1 = new Date(fecha2); //31 de diciembre de 2015
             let f2 = new Date(Date.now());
             if (f1 >= f2) {
-                if (match.attributes.team.data.id != "3") {
+                if (match.attributes.team.data.id == "1") {
                     i++;
                     if (i <= 2) {
                         matches.push([index, match.attributes.team.data.attributes.name, fecha, match.attributes.Hora, match.attributes.Type, match.attributes.EquipoVisitante, match.attributes.EscudoVisitante.data.attributes.url, match.attributes.LocalVisitante, index])
