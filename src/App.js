@@ -17,6 +17,7 @@ import Pag404 from './components/Pag404/Pag404'
 import PlayerPersonal from './components/PlayerPersonalPage/playerPersonal';
 import FullBlogPost from './components/FullBlogPost/FullBlogPost';
 import Convocatoria from './components/Convocatoria/Convocatoria';
+import BuyPage from './pages/BuyPage';
 
 
 export default function App() {
@@ -56,6 +57,7 @@ export default function App() {
         <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Blog />} />
         <Route path="/convocatoria" exact element={<Convocatoria />} />
+        <Route path="/pay" exact element={<BuyPage />} />
 
         { !todos ? 'Cargando...' :
         todos.map( (player, index)=>{
