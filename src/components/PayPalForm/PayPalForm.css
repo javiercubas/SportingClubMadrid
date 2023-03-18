@@ -1,0 +1,92 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox {
+    width: 85%;
+    height: 90%;
+    background-color: #ffff;
+    border-radius: 10px;
+
+    background-image: url('../../../public/assets/fondo1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    justify-items: center;
+    align-items: center;
+}
+
+.formH1 {
+    font-family: Teko, 'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.bodyContainer {
+    width: 100%;
+    height: 85%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    /* background-color: blue; */
+}
+
+.imgForm{
+    width: 80%;
+    height: 80%;
+
+    background-image: url('./assets/girlForm.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.orderButton {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderButtonStyle{
+    width: 100%;
+    height: 30%;
+    font-size: 2em;
+    font-family: Teko, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 10px;
+
+    background-color: #9D9600;
+
+    border: none;
+
+    color: #ffff;
+    cursor: pointer;
+}

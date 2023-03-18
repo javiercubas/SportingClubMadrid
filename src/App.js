@@ -1,7 +1,7 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import HeaderLogo from './components/HeaderLogo/HeaderLogo';
 import Men from './pages/Men';
 import Footer from './components/Footer/Footer';
@@ -41,9 +41,12 @@ export default function App() {
     fetchApi()
     fetchApi2()
   }, [])
+
+  const location = useLocation();
+
   return (
     <>
-      <HeaderLogo />
+      {location.pathname !== '/pay' && <HeaderLogo />}
       <Routes>
         <Route path="*" exact element={<Pag404 />} />
         <Route path="/" exact element={<Home />} />
@@ -59,18 +62,18 @@ export default function App() {
         <Route path="/convocatoria" exact element={<Convocatoria />} />
         <Route path="/pay" exact element={<BuyPage />} />
 
-        { !todos ? 'Cargando...' :
-        todos.map( (player, index)=>{
-           return <Route path={"/"+player.attributes.Name.toLowerCase()+"-"+player.attributes.Surname.toLowerCase().replaceAll(" ","-").replaceAll("á","a").replaceAll("é","e").replaceAll("í","i").replaceAll("ó","o").replaceAll("ú","u").replaceAll("ñ","n")} exact element={<PlayerPersonal id={player.id} />} />
-        } )}
+        {!todos ? 'Cargando...' :
+          todos.map((player, index) => {
+            return <Route path={"/" + player.attributes.Name.toLowerCase() + "-" + player.attributes.Surname.toLowerCase().replaceAll(" ", "-").replaceAll("á", "a").replaceAll("é", "e").replaceAll("í", "i").replaceAll("ó", "o").replaceAll("ú", "u").replaceAll("ñ", "n")} exact element={<PlayerPersonal id={player.id} />} />
+          })}
 
-        { !todos2 ? 'Cargando...' :
-        todos2.map( (post, index)=>{
-           return <Route path={"/"+post.attributes.Title.toLowerCase().replaceAll(" ","-").replaceAll(",","")} exact element={<FullBlogPost id={post.id} />} />
-        } )}
+        {!todos2 ? 'Cargando...' :
+          todos2.map((post, index) => {
+            return <Route path={"/" + post.attributes.Title.toLowerCase().replaceAll(" ", "-").replaceAll(",", "")} exact element={<FullBlogPost id={post.id} />} />
+          })}
       </Routes>
-      <ScrollToTop />
-      <Footer />
+      {location.pathname !== '/pay' && <ScrollToTop />}
+      {location.pathname !== '/pay' && <Footer />}
     </>
   );
 }
