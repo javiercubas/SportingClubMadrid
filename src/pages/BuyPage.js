@@ -6,8 +6,6 @@ import PayPalForm from '../components/PayPalForm/payPalForm'
 const BuyPage = () => {
   return (
     <>
-        {/* <Contact/> */}
-        {/* <Paypal/> */}
         <PayPalForm/>
     </>
   )

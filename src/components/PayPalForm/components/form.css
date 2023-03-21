@@ -46,3 +46,12 @@ select, input{
 
 }
 
+@media screen and (max-width: 768px) {
+    .form-group {
+        width: 80%;
+    }
+
+    .styleForm {
+        grid-template-rows: repeat(7, 1fr);
+    }
+}

@@ -10,7 +10,7 @@ const Paypal = () => {
             purchase_units: [
                 {
                     amount: {
-                        value: "210",
+                        value: 210,
                         currency: 'USD'
                     },
                 },
