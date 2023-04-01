@@ -4,7 +4,7 @@ import Paypal from '../../Paypal/Paypal';
 
 export default function Form() {
 
-    const [isClick, setClick] = useState(false);
+    const [isClick, setClick] = useState(true);
 
     return (
         isClick ?

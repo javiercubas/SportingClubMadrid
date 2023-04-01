@@ -18,7 +18,7 @@ import PlayerPersonal from './components/PlayerPersonalPage/playerPersonal';
 import FullBlogPost from './components/FullBlogPost/FullBlogPost';
 import Convocatoria from './components/Convocatoria/Convocatoria';
 import BuyPage from './pages/BuyPage';
-
+import CampsPage from './components/Camps/Camps';
 
 export default function App() {
   const url = 'https://clever-neumann.82-223-205-248.plesk.page/api/players?pagination[page]=1&pagination[pageSize]=300'
@@ -60,6 +60,7 @@ export default function App() {
         <Route path="/universities" exact element={<UniversityPage />} />
         <Route path="/blog" exact element={<Blog />} />
         <Route path="/convocatoria" exact element={<Convocatoria />} />
+        <Route path="/camps" exact element={<CampsPage />} />
         <Route path="/pay" exact element={<BuyPage />} />
 
         {!todos ? 'Cargando...' :

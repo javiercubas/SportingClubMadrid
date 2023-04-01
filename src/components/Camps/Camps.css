@@ -1,0 +1,110 @@
+.box_principal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.our_program_title {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.our_program_title_main {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Teko;
+    text-align: center;
+    color: rgb(160, 150, 0);
+}
+
+.our_program_separator {
+    margin: 0px auto 40px;
+    width: 100%;
+    height: 3px;
+    background: radial-gradient(circle, rgba(160, 150, 0, 1) 0%, rgba(160, 150, 0, 0) 100%);
+}
+
+.content_camps {
+    width: 98%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.camps_single {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.camps_left {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.camps_img {
+    width: 100%;
+    height: 336px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.camps_link {
+    width: 100%;
+}
+
+.camps_button {
+    border: none;
+    padding: 5%;
+    width: 100%;
+    background-color: #a09600;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.camps_info {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media (orientation: portrait) {
+
+    .content_camps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .camps_single {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .camps_left {
+        width: 90%;
+    }
+
+    .camps_info {
+        width: 90%;
+    }
+}
